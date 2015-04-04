@@ -7,19 +7,19 @@ ___Günlük güncelleştirilmekle beraber, yapım aşamasındadır..
 Yapılacak işlemler:___
 
 - [x] [C] Markdown öğrenme
-- __[x] [C]__ Mac uyumlu makdown editor
-- __[x] [B]__ Kaynak araştırma
-- __[x][B]__ Kullanilibilecek kaynaklari organize etme
-- __[x][B]__ Konulari belirleme
-- __[x][B]__ Konulari paylasma
-- __[ ][B]__ Konulari arastirma
-- __[x][C]__ Github yukleme
-- __[ ][C]__ Kali linux kurma
-- __[ ][A]__ Ornekleri cogaltma
-- __[ ][C]__ Ornek kontrol, deneme
-- __[ ][A]__ Yazim hatalari duzeltme 
-- __[ ][A]__ Github sayfasi duzenlemeleri
-- __[ ][B]__ Teslim etme
+- [x] [C] Mac uyumlu makdown editor
+- [x] [B] Kaynak araştırma
+- [x] [B] Kullanilibilecek kaynaklari organize etme
+- [x] [B] Konulari belirleme
+- [x] [B] Konulari paylasma
+- [ ] [B] Konulari arastirma
+- [x] [C] Github yukleme
+- [ ] [C] Kali linux kurma
+- [ ] [A] Ornekleri cogaltma
+- [ ] [C] Ornek kontrol, deneme
+- [ ] [A] Yazim hatalari duzeltme 
+- [ ] [A] Github sayfasi duzenlemeleri
+- [ ] [B] Teslim etme
 
 __EXTRA__
 
