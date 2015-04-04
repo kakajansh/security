@@ -6,9 +6,9 @@
 ___Günlük güncelleştirilmekle beraber, yapım aşamasındadır..  
 Yapılacak işlemler:___
 
-- __[x][C]__ Markdown öğrenme
-- __[x][C]__ Mac uyumlu makdown editor
-- __[x][B]__ Kaynak araştırma
+- __[x] [C]__ Markdown öğrenme
+- __[x] [C]__ Mac uyumlu makdown editor
+- __[x] [B]__ Kaynak araştırma
 - __[x][B]__ Kullanilibilecek kaynaklari organize etme
 - __[x][B]__ Konulari belirleme
 - __[x][B]__ Konulari paylasma
@@ -63,6 +63,8 @@ Günümüzde bilgisayar sistemlerinin güvenliği arttırılmasına rağmen, bu 
 Uygulama gelistirme odevi olarak LMYO Ozcan hocaya teslim edilmishtir falan filan yazi  
 Sayawan © 2015
 
+
+https://github.com/volkanyurt/TURKCE_GUVENLIK_NOTLARI
 
 http://mebk12.meb.gov.tr/meb_iys_dosyalar/06/06/887837/dosyalar/2013_12/25123426_8dnblgsayarvevergvenl.pdf
 
