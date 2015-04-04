@@ -6,7 +6,7 @@
 ___Günlük güncelleştirilmekle beraber, yapım aşamasındadır..  
 Yapılacak işlemler:___
 
-- __[x] [C]__ Markdown öğrenme
+- [x] [C] Markdown öğrenme
 - __[x] [C]__ Mac uyumlu makdown editor
 - __[x] [B]__ Kaynak araştırma
 - __[x][B]__ Kullanilibilecek kaynaklari organize etme
