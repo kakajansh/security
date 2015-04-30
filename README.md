@@ -2,6 +2,8 @@
 
 > Güvenlik bir ölçümdür,özellik değildir.
 
+![resim](resim/anatomy.png)
+
 
 ## **Uyari**
 
