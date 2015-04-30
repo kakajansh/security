@@ -1,5 +1,7 @@
 ## BİLGİSAYAR SİSTEMLERİNE YAPILAN SALDIRILAR VE TÜRLERİ: BİR İNCELEME
 
+> Güvenlik bir ölçümdür,özellik değildir.
+
 
 ## **Uyari**
 
@@ -86,6 +88,14 @@ Günümüzde bilgisayar sistemlerinin güvenliği arttırılmasına rağmen, bu 
 
 Uygulama gelistirme odevi olarak LMYO Ozcan hocaya teslim edilmishtir falan filan yazi  
 Sayawan © 2015
+
+https://xakep.ru/
+
+habr
+
+youtube
+
+video tutorials
 
 
 https://github.com/volkanyurt/TURKCE_GUVENLIK_NOTLARI
