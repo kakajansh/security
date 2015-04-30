@@ -1,23 +1,24 @@
-## BİLGİSAYAR SİSTEMLERİNE YAPILAN SALDIRILAR VE TÜRLERİ: BİR İNCELEME
+## Bilgisayar sistemlerine yapılan saldırılar ve türleri
 
 > #### Güvenlik bir ölçümdür, özellik değildir.
 
 ![resim](resim/anatomy.png)
 
-### Hakkinda 
+### Hakkında 
 
-**Networks and security** cok genis capli bir konu alani oldugundan, konularimiz genelde neyi nasil yapacagin shekilinde degilde, bir shey yapmak icin izleyeceginiz yollar ne olmali onu bilgilendirma amacli kaleme alinmishtir.
+**Networks and security** çok geniş çaplı bir konu alanı olduğundan, konularımız genelde neyi nasıl yapacağın şekilinde değilde, bir şey yapmak için izleyeceğiniz yollar ne olmalı onu bilgilendirme amaçlı kaleme alınmıştır.
 
 
 ### Icerik
 
-* [Uyari](uyari.md)
-* [Giris](giris.md)
+* [Uyarı](uyari.md)
+* [Giriş](giris.md)
+* [Genel bilgi](genel_bilgi.md)
   * alt ıcerık
   * onun da alti
 * Ikinci
 * Ucuncu
-* [Arastirilacak kaynak listesi](liste.md)
+* [Araştırılacak kaynak listesi](liste.md)
 
 #### Extra
 
