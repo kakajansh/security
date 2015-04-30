@@ -14,11 +14,14 @@
 * [Uyarı](uyari.md)
 * [Giriş](giris.md)
 * [Genel bilgi](genel_bilgi.md)
-  * alt ıcerık
-  * onun da alti
-* Ikinci
+* [Ağ temelleri](ag_temelleri.md)
+  * [TCP/IP Yapısı](ag_temelleri.md#TCP/IP Yapısı)
+  * [IP Adresleme]
+  * [Network Cihazları]
+  * [Servisler]
 * Ucuncu
 * [Araştırılacak kaynak listesi](liste.md)
+* [Tavsiye edilen kaynak listesi](tavsiye.md)
 
 #### Extra
 
