@@ -10,7 +10,7 @@ Ağ, birden fazla bilgisayarların birbirlerine yaptığı bağlantıya denir
 * IP Adresleme
 * Network Cihazları
 * Servisler
-#### TCP/İP Yapısı
+#### TCP/IP Yapısı
 __TCP/IP__ yani biraz açarsak _“Transmission Control Protocol / Internet Protocol”_ internet üzerinde iletişimi sağlayan protokoller kümesidir. TCP/IP bir çok protokolü içerisinde barındırmaktadır. Sahip olduğu kurallar çerçevesinde ağlara dahil olan cihazları birbiri ile iletişim kurabilir kılmaktadır.
 TCP/IP protokolü içerisinde cihazların birbirileri ile iletişime geçebilmesi için bazı parametrelere gerek duyulmaktadır. Bunları şöyle listeleyebiliriz.* Hostname ( Bilgisayar Adı )  Hostname, sistemlerin aldığı isimdir. Kullanıcılar tarafından sistemi tanımlamak amacıyla atanır .
   * IP Adresi    IP adresi TCP/IP protokolü üzerinden iletişim kuran cihazların birbiriyle ilişimde kullandıkları adrestir .* MAC Adresi  
