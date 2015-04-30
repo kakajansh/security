@@ -16,7 +16,7 @@
 ### Siyah Şapka?
 
 * Meraklı olan, üreten, maddi bir çıkarı olmayan kişi.  
->Evet, bir suçluyum. Suçum meraklı oluşum. Suçum insanları nasıl göründükleri yerine söyledikleri ve düşündükleriyle yargılamak. Benim suçum sizleri zekamla alt etmek, beni asla affetmeyeceğinizi bildiğim bir şey.  
+> Evet, bir suçluyum. Suçum meraklı oluşum. Suçum insanları nasıl göründükleri yerine söyledikleri ve düşündükleriyle yargılamak. Benim suçum sizleri zekamla alt etmek, beni asla affetmeyeceğinizi bildiğim bir şey.  
 The Mentor
 
 ### Beyaz Şapka?
@@ -39,3 +39,7 @@ Bkz : Certified Ethical Hacker
 ### Lamer?
 
 * Ne yaptığının tam olarak farkında olmayan, bilgisayar korsanlığı yapabilmek için yeterince bilgisi olmayan kişi.
+
+#### Kaynak 
+
+[Medya kuruluslari-icin-siber-guvenlik-101](http://www.slideshare.net/evrenyalcin1/medya-kuruluslariicinsiberguvenlik101)
