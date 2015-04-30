@@ -1,8 +1,46 @@
 ## BİLGİSAYAR SİSTEMLERİNE YAPILAN SALDIRILAR VE TÜRLERİ: BİR İNCELEME
 
-> Güvenlik bir ölçümdür,özellik değildir.
+> #### Güvenlik bir ölçümdür, özellik değildir.
 
 ![resim](resim/anatomy.png)
+
+### Hakkinda 
+
+Günümüzde bilgisayar sistemlerinin güvenliği arttırılmasına rağmen, bu sistemlerine yapılan saldırılar da artmaktadır. Bu sistemlerin sahip olduğu güvenlik yapısını aşmaya çalışan saldırılar ile alınan karşı tedbirlerin sayısının da yükseldiği ve farklılıklar gösterdiği tespit edilmiştir. Bu tür saldırılardan korunmak için; yapılan tüm saldırıların takip edilmesi, gelişiminin izlenmesi, bilgisayar güvenliğinin yeterli ve etkin bir seviyede oluşturulmasında önemli bir gereksinimdir. Bu makalede; bilgisayar sistemlerine yapılan saldırılar incelenmiş; saldırı-saldırgan ilişkisi değerlendirilmiş; saldırıların ortak olarak sahip olduğu karakteristikler sunulmuş; yapılan saldırıların gelişimi irdelenmiş ve temel saldırı türleri gözden geçirilmiştir. Sonuçta; bilgisayar sistemlerine yapılan saldırılarda, kullanılan yöntemler ve metodolojiler iyi bilinmesinin, saldırganların hedefi olan sistemlerin güvenliği sıkılaştırılmasının, saldırı karakteristikleri izlenmesinin, saldırılarda hedef alınan korunmasızlıklar ile zayıflıkların giderilmesinin ve alınacak tedbirlerde saldırgan profillerinin de mutlaka dikkate alınmasının faydalı olacağı değerlendirilmektedir. Bunun yanında; bilgisayar sistemleri güvenliği, doğru ve etkili bir şekilde sağlanmak korumak için alınacak tedbirlerde güvenlik yaşam döngüsü mutlaka uygulanmalı ve bu çerçevede karşılaşılacak zayıflıklar ve eksiklikler giderilmelidir.
+
+**Networks and security** cok genis capli bir konu alani oldugundan, konularimiz genelde neyi nasil yapacagin shekilinde degilde, bir shey yapmak icin izleyeceginiz yollar ne olmali onu bilgilendirma amacli kaleme alinmishtir.
+
+
+### Icerik
+
+* [Hacker Terimleri](extra/hacker.md)
+* Birinci
+  * alt ıcerık
+  * onun da alti
+* Ikinci
+* Ucuncu
+
+### Kaynak
+
+#### Kitaplar
+
+* [Kitap 1]()
+* [kitap 2]()
+
+#### Goruntulu
+
+* [Video 1]()
+* [Video 2]()
+
+### Hazirlayan
+
+* **[A]** Hangeldi Atayev
+* **[C]** Kakacan Şagılıcov
+* **[B]** 
+
+Uygulama gelistirme odevi olarak LMYO Ozcan hocaya teslim edilmishtir falan filan yazi  
+Sayawan © 2015
+
 
 
 ## **Uyari**
@@ -30,66 +68,6 @@ __EXTRA__
 - [ ] [C] dropbox vs kitap kaynaklari yukleme
 - [ ] [C] screenshot yukleme icin arastirma
 
-GitHub supports many extras in Markdown that help you reference and link to people. If you ever want to direct a comment at someone, you can prefix their name with an @ symbol: Hey @kneath — love your sweater!
-
-But I have to admit, tasks lists are my favorite:
-
-- [x] This is a complete item
-- [ ] This is an incomplete item
-
-And, of course emoji! :sparkles: :camel: :boom:
-
-`deneme`
-
-```
-deneme;
- 
-satir 1
-satir 2
-
-var hello = "world";
-
-function() {
-	console.log("hello world");
-}
-```
-
-
-### Hakkinda 
-
-Günümüzde bilgisayar sistemlerinin güvenliği arttırılmasına rağmen, bu sistemlerine yapılan saldırılar da artmaktadır. Bu sistemlerin sahip olduğu güvenlik yapısını aşmaya çalışan saldırılar ile alınan karşı tedbirlerin sayısının da yükseldiği ve farklılıklar gösterdiği tespit edilmiştir. Bu tür saldırılardan korunmak için; yapılan tüm saldırıların takip edilmesi, gelişiminin izlenmesi, bilgisayar güvenliğinin yeterli ve etkin bir seviyede oluşturulmasında önemli bir gereksinimdir. Bu makalede; bilgisayar sistemlerine yapılan saldırılar incelenmiş; saldırı-saldırgan ilişkisi değerlendirilmiş; saldırıların ortak olarak sahip olduğu karakteristikler sunulmuş; yapılan saldırıların gelişimi irdelenmiş ve temel saldırı türleri gözden geçirilmiştir. Sonuçta; bilgisayar sistemlerine yapılan saldırılarda, kullanılan yöntemler ve metodolojiler iyi bilinmesinin, saldırganların hedefi olan sistemlerin güvenliği sıkılaştırılmasının, saldırı karakteristikleri izlenmesinin, saldırılarda hedef alınan korunmasızlıklar ile zayıflıkların giderilmesinin ve alınacak tedbirlerde saldırgan profillerinin de mutlaka dikkate alınmasının faydalı olacağı değerlendirilmektedir. Bunun yanında; bilgisayar sistemleri güvenliği, doğru ve etkili bir şekilde sağlanmak korumak için alınacak tedbirlerde güvenlik yaşam döngüsü mutlaka uygulanmalı ve bu çerçevede karşılaşılacak zayıflıklar ve eksiklikler giderilmelidir.
-
-**Networks and security** cok genis capli bir konu alani oldugundan, konularimiz genelde neyi nasil yapacagin shekilinde degilde, bir shey yapmak icin izleyeceginiz yollar ne olmali onu bilgilendirma amacli kaleme alinmishtir.
-
-
-### Icerik
-
-* Birinci
-  * alt ıcerık
-  * onun da alti
-* Ikinci
-* Ucuncu
-
-### Kaynak
-
-#### Kitaplar
-
-* [Kitap 1]()
-* [kitap 2]()
-
-#### Goruntulu
-
-* [Video 1]()
-* [Video 2]()
-
-### Hazirlayan
-
-* **[A]** Hangeldi Atayev
-* **[C]** Kakacan Şagılıcov
-* **[B]** 
-
-Uygulama gelistirme odevi olarak LMYO Ozcan hocaya teslim edilmishtir falan filan yazi  
-Sayawan © 2015
 
 https://xakep.ru/
 
