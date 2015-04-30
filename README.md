@@ -15,7 +15,7 @@
 * [Giriş](giris.md)
 * [Genel bilgi](genel_bilgi.md)
 * [Ağ temelleri](ag_temelleri.md)
-  * [TCP/IP Yapısı](ag_temelleri.md#TCP/IP Yapısı)
+  * [TCP/IP Yapısı](ag_temelleri.md#tcpip-yapısı)
   * [IP Adresleme]
   * [Network Cihazları]
   * [Servisler]

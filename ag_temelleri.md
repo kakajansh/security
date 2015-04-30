@@ -6,7 +6,7 @@ Ağ, birden fazla bilgisayarların birbirlerine yaptığı bağlantıya denir
 
 * 1969 Yılında ABD’nin askeri amaçlı kurduğu __ARPANET__ ile ortaya çıktı.* Daha sonra ilerleyen araştırma ve gelişen teknoloji ile günümüzdeki halini aldı ve artık biz ona __İNTERNET__ diyoruz.* __İNTERNET__ birbirine bağlı milyarlarca cihazdan oluşmaktadır ve kendi içerisinde irili ufaklı milyonlarca ağ yapısı barındırmaktadır.
 ### İçerik
-* [TCP/IP Yapısı]
+* [TCP/IP Yapısı](#tcpip-yapısı)
 * IP Adresleme
 * Network Cihazları
 * Servisler
