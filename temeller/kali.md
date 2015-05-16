@@ -15,7 +15,7 @@
 
 #### Kurulumu
 
-1. VirtualBox programını çalıştıralım, yeni oluşturduğumuz sistemin üstüne sağ tıklayarak __Start__layalım.
+1. VirtualBox programını çalıştıralım, yeni oluşturduğumuz sistemin üstüne sağ tıklayarak __Start__ layalım.
 ![][lx1]
 
 2. Makina çalıştığında farklı kurma seçenekleri geliyor. Ben __Install__ tercih ederek, normal kuruluma devam ediyorum.
