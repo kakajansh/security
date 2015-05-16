@@ -31,7 +31,8 @@ Buna benzer bir ekranla karşılaştıysak, demek ki sorunsuz internete bağlanm
 PING www.google.com (50.0.2.221) 56(84) bytes of data.
 64 bytes from cache.google.com (50.0.2.221): icmp_req=1 ttl=60 time=28.7 ms 
 64 bytes from cache.google.com (50.0.2.221): icmp_req=2 ttl=60 time=28.1 ms 
-64 bytes from cache.google.com (50.0.2.221): icmp_req=3 ttl=60 time=27.4 ms 64 bytes from cache.google.com (50.0.2.221): icmp_req=4 ttl=60 time=29.4 ms 
+64 bytes from cache.google.com (50.0.2.221): icmp_req=3 ttl=60 time=27.4 ms 
+64 bytes from cache.google.com (50.0.2.221): icmp_req=4 ttl=60 time=29.4 ms 
 64 bytes from cache.google.com (50.0.2.221): icmp_req=5 ttl=60 time=28.7 ms 
 64 bytes from cache.google.com (50.0.2.221): icmp_req=6 ttl=60 time=28.0 ms 
 --snip--
