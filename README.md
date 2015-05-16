@@ -15,10 +15,10 @@
 * [Giriş][2]
 * [Genel bilgi][3]
 * Temeller
-	* Sanal Lab ayarları
-	* Kali Linux kullanımı
-	* Python proğramlama
-	* Metasploit Framework kullanımı
+  * Sanal Lab ayarları
+  * Kali Linux kullanımı
+  * Python proğramlama
+  * Metasploit Framework kullanımı
 * [Ağ temelleri][4]
   * [TCP/IP Yapısı][5]
   * [IP Adresleme]
