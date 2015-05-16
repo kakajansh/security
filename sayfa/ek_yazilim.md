@@ -13,3 +13,9 @@ root@kali:/mydirectory# echo hello georgia a third time >> myfile root@kali:/myd
 hello georgia again
 hello georgia a third time
 ```
+
+```Shell
+root@kali:/mydirectory# echo hello georgia a third time >> myfile root@kali:/mydirectory# cat myfile
+hello georgia again
+hello georgia a third time
+```
