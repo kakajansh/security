@@ -7,3 +7,9 @@
 * Ettercap
 * Android Emulator
 * Smartphone Pentest Framework
+
+```
+root@kali:/mydirectory# echo hello georgia a third time >> myfile root@kali:/mydirectory# cat myfile
+hello georgia again
+hello georgia a third time
+```
