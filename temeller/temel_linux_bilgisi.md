@@ -11,3 +11,5 @@
 * Process
 * Paket Yönetim Sistemi
 * Sistem İzleme
+
+### Terminal 
