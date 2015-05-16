@@ -2,7 +2,7 @@
 
 * VirtualBox bir sanallaştırma yazılımıdır.
 * İştetim sistemlerini fiziksel makinelere kurmak yerine, VirtualBox aracılığı ile sanal olarak kurulabilir ve sanal network oluşturabilirsiniz.
-* VirtualBox ve VMware amaçları aynı farklı proğramlardır, VMware Mac desteklemediği için VirtualBox ile devam edeceğiz.
+* VirtualBox ve VMware amaçları aynı farklı proğramlardır, biz VirtualBox ile devam edeceğiz.
 * İndirme linkleri:
     * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
     * [VMware](www.vmware.com/go/downloadplayer)
@@ -43,11 +43,3 @@
 [vb6]: ../resim/kurulum/vb6.png
 [vb7]: ../resim/kurulum/vb7.png
 [vb8]: ../resim/kurulum/vb8.png
-
-#### VirtualBox Guest Additions
-
-Kali dağıtımını VirtualBox aracılığı ile kullanıyorsanız, kullandığınız windows veya linux masaüstünden dosya işlemleri, kopyala yapıştır vb. işlemler için VirtualBox Guest Additions kurulumuna ihtiyaç olacaktır.
-
-* Guest Additions'ı yüklemeden önce linux kernel header'ların kurulması gerekiyor.  
-    `apt-get update && apt-get install -y linux-header-$(uname -r)`
-* Daha sonra VirtualBox ekranında üstten __Devices__ sekmesine tıklanır. Devices sekmesinden __Install Guest Additions__ sekmesine tıklanır.
