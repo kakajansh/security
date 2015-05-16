@@ -2,7 +2,7 @@
 
 > #### Güvenlik bir ölçümdür, özellik değildir.
 
-![resim][image-1]
+![][image-1]
 
 ### Hakkında
 
@@ -14,17 +14,37 @@
 * [Uyarı][1]
 * [Giriş][2]
 * [Genel bilgi][3]
-* Temeller
-  * Sanal Lab ayarları
-  * Kali Linux kullanımı
-  * Python proğramlama
-  * Metasploit Framework kullanımı
+* __Temeller__
+    * Sanal Lab ayarları
+    * Kali Linux kullanımı
+    * Bash & Python proğramlama
+    * Metasploit Framework kullanımı
+
+* __Değerlendirmeler__
+    * Bilgi toplama
+    * Güvenlik açıkları bulma
+    * Trafik yakalama
+
+* __Ataklar__
+    * Exploitation
+    * Password attacks
+    * Client-side exploitation
+    * SociaL engineering
+    * Bypassing antivirus applications
+    * Post exploitation
+    * Web application testing
+    * Wireless attacks
+
+* __Mobil hackleme__
+    * Using the smartphone pentest framework
+
+### XXXXX
+
 * [Ağ temelleri][4]
-  * [TCP/IP Yapısı][5]
-  * [IP Adresleme]
-  * [Network Cihazları]
-  * [Servisler]
-* Ucuncu
+    * [TCP/IP Yapısı][5]
+    * [IP Adresleme]
+    * [Network Cihazları]
+    * [Servisler]
 * [Araştırılacak kaynak listesi][6]
 * [Tavsiye edilen kaynak listesi][7]
 
@@ -36,9 +56,9 @@
 
 * **[A]** Hangeldi Atayev
 * **[C]** Kakacan Şagılıcov
-* **[B]** 
+* **[B]**
 
-Uygulama gelistirme odevi olarak LMYO Ozcan hocaya teslim edilmishtir falan filan yazi  
+Uygulama gelistirme odevi olarak LMYO Ozcan hocaya teslim edilmishtir falan filan yazi
 Sayawan © 2015
 
 [1]:	uyari.md
