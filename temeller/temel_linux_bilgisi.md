@@ -341,7 +341,7 @@ Vi editörünü kullanırken en çok kullanılan komutlar şunlardır
 * `?`           imleçten dosyanın başına doğru arama yapar.
 
 ```ShellSession
-root@kali:~/mydirectory# vi testfile.txt hi
+root@kali:~/mydirectory# vi testfile.txt 
 we
 are
 teaching
@@ -351,6 +351,7 @@ today
 "testfile.txt"  7L, 46C           1,1
 All
 ```
+Nano'da olduğu gibi Vi'de hemen açıldıktan sonra düzenlemeye başlanamıyor. Bir dosyayı düzenlemek için, __I__ basarak ekleme moduna girilmelidir. Ekleme moduna girildiğinde terminalin alt kısmında INSERT görüntülenir. Değişiklikleri tamamladıktan sonra ESC tuşuna basarak komut moduna geri dönüş yapılır. Vi'den çıkmak için de __wq__ yazılır.
 
 ##### cat
 
@@ -363,10 +364,6 @@ root@kali:~/mydirectory# cat dosyam
 2 Kasım
 3 Kali
 ```
-
-grep
-sed
-awk
 
 ##### echo
 
@@ -383,20 +380,54 @@ root@kali:/mydirectory# cat dosyam
 merhaba dunya
 ```
 
-#####
+##### grep
+
+`grep` komutu, kelime arama komutudur. Verilen data içerisinden istenilen kelimeye uygun satırı getirir.
+    * __-i__ büyük küçük harf duyarsızlığı parametresidir.
+    * __-r__ ile düzenli ifadeler (regex) kullanılabilir.
+
 ```ShellSession
+root@kali:~/mydirectory# grep September myfile
+1 Derbycon September
+3 Brucon September
 ```
 
-#####
+##### sed
+
+`sed` bir manipulasyon komutudur. Sadece bu komutu özelliklerini anlatmak için bir kitap yazılabilir, biz sadece basit bir örnekle bahsedip geçelim. `sed` için (/) slaş bir sınırlayıcı bir karakterdir. _myfile_ dosyasında tüm _Blackhat_ sözcüklerini _Defcon_'a çevirmek için. 
+
 ```ShellSession
+root@kali:~/mydirectory# sed 's/Blackhat/Defcon/' myfile
+1 Derbycon September
+2 Shmoocon January
+3 Brucon September
+4 Defcon July
+5 Bsides *
+6 HackerHalted October
+7 Hackcon April
 ```
 
-#####
-```ShellSession
-```
+##### awk
 
-#####
+Desen eşleştirme komutudur. Örneğin 6 veya daha fazla numaralı konferansları bulmak için:
+
 ```ShellSession
+root@kali:~/mydirectory# awk '$1 >5' myfile 
+6 HackerHalted October
+7 Hackcon April
+```
+--
+veya her satırda ilk ve üçüncü kelimeleri bulmak için:
+
+```ShellSession
+root@kali:~/mydirectory# awk '{print $1,$3;}' myfile 
+1 September
+2 January
+3 September
+4 July 
+5 *
+6 October 
+7 April
 ```
 
 
