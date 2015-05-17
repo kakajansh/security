@@ -233,6 +233,7 @@ root@kali:~#
 |      1       | sadece çalıştırma  |     001      | rw-   |
 |      0       | hiçbiri            |     000      | rwx   |
 
+##### Örnek
 ```ShellSession
 root@kali:~/mydirectory# ls -l myfile 
 -rw-r--r-- 1 root root 47 Apr 23 21:15 myfile
@@ -266,9 +267,13 @@ root@kali:~# cd mydirectory/
 
 ##### Kopyalama, Taşıma, Silme
 
-1. Kopyalama `cp`
-2. Taşıma `mv`
-3. Silme `rm`
+1. Kopyalama `cp`  
+    __-r__ parametresi ile dizin içerisindeki herşeyi taşır.
+    __-p__ parametresi ile taşıma esnasında dosya haklarını korur.
+2. Taşıma `mv`  
+    __-f__ parametresi ile kaynak dosya hedef dosyaya kopyalanır ve herhangi birşey sorulmaz
+3. Silme `rm`  
+    __-r__ parametresi ile rekürsif bir şekilde, verilen dosyanın içindeki tüm dosyalar silinebilir.
 
 ```ShellSession
 1-root@kali:/mydirectory# cp /root/myfile myfile2
@@ -276,10 +281,76 @@ root@kali:~# cd mydirectory/
 3-root@kali:/mydirectory# rm myfile2
 ```
 
+#### Metin Editörleri
 
+* Linux'ta hemen hemen tüm işlemler dosya üzerinde gerçekleşmektedir.
+* Mevcut birçok linux sunuculu sistem kullanıcı arayüzüne sahip değildir. Bu sunucuları yönetmek veya zaman, performans açısından iyi sonuçlar elde edebilmek için metin editörü kullanmak elzemdir.
+* Linux'ta en çok kullanılan editörler __nano__ ve __vi__'dir.
+* _Nano_, kullanıcı dostudur ve linux ile hazır gelir.
+* _Vi_, kullanımı daha zor olan, buna karşın harika yetenekleri bulunan bir metin editörüdür. 
 
+##### Nano Editörü
 
+* Gelişmiş metin editörüdür. Kullanıcı dostu bir arayüze sahiptir.
+* Kullanımı: `nano [dosya_adi]`
+* Aşağıdaki özellikler ile kullanılmaktadır.
+    * `Ctrl + X` = Çıkış
+    * `Ctrl + K` = Satırı kes
+    * `Ctrl + U` = Satırı yapıştır
+    * `Ctrl + W` = Arama yapar
+    * `Ctrl + K` = Belirtilen texti kes
+    * `Ctrl + Z` = Geri al
+    * `Ctrl + G` = Yardım ekranını açar
 
+##### Vi Editörü
+
+* Gelişmiş bir metin editörüdür ve kullanımı biraz zordur.
+* Vi ilk başta karmaşık görünse de hızı ve verimi ile her kullanıcın işini büyük ölçüde kolaylaştıran bir editördür.
+* Çok kullanılan komutları öğrendikten sonra vi'nin gücü ortaya çıkacaktır.
+* Linux dağıtımlarıyla birlikte gelmektedir.
+* Kullanımı: `vi [dosya_adi]`, dosya mevcut ise onu açar değilse oluşturup öyle açar.
+
+--
+
+Vi editörü iki moda sahiptir:
+    1. __Insert Modu:__ Düzenleme yapılan dosya içinde metin işlemlerinin yapıldığı mod.
+    2. __Komut Satırı Modu:__ Açılan metin üzerinde arama, değiştirme, kaydetme, kapatma gibi eylemlerin gerçekleştirildiği mod.
+
+--
+
+Vi editörünü kullanırken en çok kullanılan komutlar şunlardır
+* `a`           imlecin olduğu yerden itibaren edit moduna geçer.
+* `i`           insert moda geçiş yapar.
+* `ESC`         insert modu kapatır.
+* `u`           geri al.
+* `U`           tümünü geri al.
+* `dd`          imlecin olduğu satırı sil.
+* `x`           imlecin gerisindeki karakteri sil.
+* `/kelime`     'kelime' için arama yapar.
+* `:w`          metni kaydet.
+* `:q`          Belgeyi kapat.
+* `:10`         imleci 10. satıra getirir.
+* `H`           imleci sayfanın en başına getirme.
+* `L`           imleci sayfanın en sonuna götürme
+* `o`           imlecin altına yeni bir satır açar. ESC ile çıkılır.
+* `O`           imlecin üstüne yeni bir satır açar. ESC ile çıkılır.
+* `:q!`         kaydetmeden çık.
+* `d`           bulunan ve önceki satırı siler.
+* `h`           imlecin soluna doğru devam et.
+* `l`           imlecin sağına doğru devam et.
+* `?`           imleçten dosyanın başına doğru arama yapar.
+
+```ShellSession
+root@kali:~/mydirectory# vi testfile.txt hi
+we
+are
+teaching
+pentesting
+today
+~
+"testfile.txt"  7L, 46C           1,1
+All
+```
 
 ##### cat
 
@@ -292,6 +363,10 @@ root@kali:~/mydirectory# cat dosyam
 2 Kasım
 3 Kali
 ```
+
+grep
+sed
+awk
 
 ##### echo
 
