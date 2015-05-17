@@ -247,7 +247,6 @@ root@kali:~/mydirectory# ls -l myfile
 ```
 Şimdi bu komutu çalıştırdıktan sonra, bu dosyaya sadece root erişebilir. Diğer kullanıcılar `access denied` hatasini alirlar.
 
-
 ##### Yeni Bir Klasör veya Dosya Oluşturma
 
 * Yeni boş bir dosya oluşturmak için
@@ -267,6 +266,15 @@ root@kali:~# cd mydirectory/
 
 ##### Kopyalama, Taşıma, Silme
 
+1. Kopyalama `cp`
+2. Taşıma `mv`
+3. Silme `rm`
+
+```ShellSession
+1-root@kali:/mydirectory# cp /root/myfile myfile2
+2-root@kali:/mydirectory# mv /root/myfile myfile2
+3-root@kali:/mydirectory# rm myfile2
+```
 
 
 
