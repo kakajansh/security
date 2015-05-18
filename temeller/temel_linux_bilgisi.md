@@ -362,6 +362,10 @@ All
 ```
 Nano'da olduğu gibi Vi'de hemen açıldıktan sonra düzenlemeye başlanamıyor. Bir dosyayı düzenlemek için, __I__ basarak ekleme moduna girilmelidir. Ekleme moduna girildiğinde terminalin alt kısmında INSERT görüntülenir. Değişiklikleri tamamladıktan sonra ESC tuşuna basarak komut moduna geri dönüş yapılır. Vi'den çıkmak için de __wq__ yazılır.
 
+--
+
+#### veri işleme
+
 ##### cat
 ___
 

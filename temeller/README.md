@@ -1,3 +1,5 @@
+## Temeller
+--
 ## Sanal Lab Ayarları
 
 * VirtualBox (VMware) Kurulumu
@@ -7,6 +9,14 @@
     * Ek yazılım
     * Hedef sanal makineler
 * Temel Linux Bilgisi
+
+## Bash & Python programlama
+
+* Bash programlama
+* Python programlama
+
+## Metasploit Framework kullanımı
+
 
 #### Youtube
 * [Kali Linux Vmware Kurulumu](https://www.youtube.com/watch?v=wtRIMvOy8Pk)
