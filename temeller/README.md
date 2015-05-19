@@ -1,24 +1,10 @@
 ## Temeller
 
-### Kali Linux nedir ?
-
-* Kali bir Debian tabanlı Linux dağıtımıdır.
-* Güvenlik testleri gerçekleştiren pentest, audit ekiplerinin kullanabileceği offensive security araçlarını bünyesinde barındırır.
-* Penetrasyon test araçlarını içerir. Yoksa hepsini teker teker kurmak gerçek bir başağrısı olmakla beraber, büyük bir zaman kaybıdır.
-* Kali Linux iki farklı şekilde kullanılabilir;
-    1. Hazır CD den çalıştırma yolu ile
-    2. Hard Disk'e kurulum, VMware aracılığı ile
-
-* CD den çalıştırma yönteminin performansı cd okuyucunun hızına bağlıdır. Tavsiye edilen yöntem; Kali' yi diske kurmak veya sanallaştırma platformlarında çalıştırmak.
-* Masaüstü ortamı olarak BackTrack'teki gibi KDE seçeneği yoktur, yalnızca GNOME masaüstü ortamı kullanılabilir durumdadır.
-* Masaüstü kullanarak erişilebilecek proğramların çoğu, komut satırından çalışan program haline getirilmiştir.
-* İndirme linki [http://www.kali.org/downloads/](http://www.kali.org/downloads/)
-
-
 Bu bölümde, denemelerimiz için lazım olacak programların kurulumu yapacağız. Kendimize ait bir sanal deneme labaratuvarımızı oluşturacağız. Kalimizi kurduktan sonra Linux dünyasına temel bir giriş yaparak `Hello world` diyeceğiz. Sonrasında zaten bildiğimiz `if - else - for` gibi proğramlama terimlerinin Linux'un dilinde, bash & python, nasıl kullanıldığına bakacağız. Son olarak ta, Metasploit Framework'a bir giriş yapıp Linux hakkında genel bir bilgi edinmiş olacağız.
 
 ### Sanal Lab Ayarları
 
+* Kali Linux nedir
 * VirtualBox Kurulumu
     * Kali Linux Kurulumu
     * VirtualBox Guest Additions
