@@ -16,6 +16,7 @@
 ### Siyah şapka?
 
 * Meraklı olan, üreten, maddi bir çıkarı olmayan kişi.
+
 > Evet, bir suçluyum. Suçum meraklı oluşum. Suçum insanları nasıl göründükleri yerine söyledikleri ve düşündükleriyle yargılamak. Benim suçum sizleri zekamla alt etmek, beni asla affetmeyeceğinizi bildiğim bir şey.
     The Mentor
 
