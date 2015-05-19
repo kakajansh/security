@@ -1,8 +1,8 @@
 ## Temeller
---
-## Sanal Lab Ayarları
 
-* VirtualBox (VMware) Kurulumu
+### Sanal Lab Ayarları
+
+* VirtualBox & VMware Kurulumu
 * Kali Linux kurulumu
     * VirtualBox Guest Additions
     * Network Ayarları
@@ -10,13 +10,14 @@
     * Hedef sanal makineler
 * Temel Linux Bilgisi
 
-## Bash & Python programlama
+### Bash & Python programlama
 
 * Bash programlama
 * Python programlama
 
-## Metasploit Framework kullanımı
+### Metasploit Framework kullanımı
 
+http://www.mininova.org/tor/13274076
 
 #### Youtube
 * [Kali Linux Vmware Kurulumu](https://www.youtube.com/watch?v=wtRIMvOy8Pk)

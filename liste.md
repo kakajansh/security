@@ -1,3 +1,6 @@
+http://www.slideshare.net/bgasecurity/2-do-sddossaldirilarivecesitleri
+
+http://www.slideshare.net/bgasecurity/dos-ddos-ataklar-ve-korunma-yntemleri
 
 https://xakep.ru/
 
@@ -51,7 +54,7 @@ http://s35.podbean.com/pb/3aae4be14c6c7faa73f6da005bd139a9/551fc479/data2/blogs6
 http://www.sbe.deu.edu.tr/dergi/cilt11.say%C4%B14/Eminagao%C4%9Flu%20Goksen%2011.4.pdf
 
 
-Youtube 
+Youtube
 
 ￼https://www.youtube.com/user/ozguryazilim/videos￼
 

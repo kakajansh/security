@@ -25,15 +25,15 @@
     * Güvenlik açıkları bulma
     * Trafik yakalama
 
-* __Ataklar__
+* __Saldırılar__
     * Exploitation
-    * Password attacks
+    * Şifre saldırıları
     * Client-side exploitation
     * SociaL engineering
-    * Bypassing antivirus applications
+    * Antiwirüs uygulamalarını atlatma
     * Post exploitation
-    * Web application testing
-    * Wireless attacks
+    * Web uygulamaları
+    * Kablosuz ağ saldırıları
 
 * __Mobil hackleme__
     * Using the smartphone pentest framework

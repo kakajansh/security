@@ -1,6 +1,6 @@
 ## **Uyari**
 
-___Günlük güncelleştirilmekle beraber, yapım aşamasındadır..  
+___Günlük güncelleştirilmekle beraber, yapım aşamasındadır..
 Yapılacak işlemler:___
 
 - [x] [C] Markdown öğrenme
@@ -14,7 +14,7 @@ Yapılacak işlemler:___
 - [ ] [C] Kali linux kurma
 - [ ] [A] Ornekleri cogaltma
 - [ ] [C] Ornek kontrol, deneme
-- [ ] [A] Yazim hatalari duzeltme 
+- [ ] [A] Yazim hatalari duzeltme
 - [ ] [A] Github sayfasi duzenlemeleri
 - [ ] [B] Teslim etme
 
