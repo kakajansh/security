@@ -1,18 +1,19 @@
 ### Temel Linux Bilgisi
 
-* Terminal Nedir? Nasıl açılır?
-* Linux Komutları serisi - 1
-* Hostname ve Network Ayarları
-* Servisler
+* Terminal Nedir?
+* Linux Komutları
 * Linuxta Kullanıcı Yönetimi
 * Linux Dosya Sistemi
-* Linux Komutları Serisi - 2
 * Metin Editörleri
+* Veri İşleme Komutları
 * Process
 * Paket Yönetim Sistemi
 * Sistem İzleme
 
-#### Terminal 
+* Hostname ve Network Ayarları
+* Servisler
+
+#### Terminal
 ___
 
 * Terminal Gnome masaüstü aracının komut satırı aracıdır.
@@ -20,7 +21,7 @@ ___
 * Kali grafik arayüzüne sahip olsa da, komut satırında grafik ara biriminde yapılanlardan daha çok eylem gerçekleştirebilir
 * Kali'de terminali komut satırından açmak için `ctrl + alt + T` kombinasyonu kullanılır.
 
-#### Linux Komutları Serisi - 1
+#### Linux Komutları
 ___
 
 * Linux'te birçok komut parametre almaktadır. Parametreler komut adı yazıldıktan sonra bir boşluk bırakılarak yazılmalıdır. Genellikle parametreler '-' işareti ile başlamaktadır.
@@ -62,8 +63,8 @@ root@kali:~# pwd
 * `cd..` komutu ile bir üst dizine/klasöre geçiş yapılır.
 
 ```ShellSession
-root@kali:~/Desktop# cd .. 
-root@kali:~/# cd ../etc 
+root@kali:~/Desktop# cd ..
+root@kali:~/# cd ../etc
 root@kali:/etc#
 ```
 
@@ -81,14 +82,14 @@ NAME
 SYNOPSIS
     ls [OPTION]... [FILE]...
 
-DESCRIPTION 
+DESCRIPTION
     List information about the FILEs (the current directory by default). Sort entries alphabetically if none of -cftuvSUX nor --sort is speci- fied
 
     Mandatory  arguments  to  long  options are mandatory for short options too.
-    
+
     -a, --all
         do not ignore entries starting with .
-    
+
     -A, --almost-all
         do not list implied . and ..
 --snip--
@@ -112,7 +113,7 @@ ___
 ___
 
 * `/etc/passwd` dosyası kullanıcı bilgilerini saklar.
-* Bir ASCII dosyası, her bir kullanıcı için bir girdi kullanarak saklanır. Taslak olarak şöyledir:  
+* Bir ASCII dosyası, her bir kullanıcı için bir girdi kullanarak saklanır. Taslak olarak şöyledir:
     `-isim:şifre:kid:gid:yorum:evdizini:kabuk`
     * `-isim`     : Login ismi
     * `-şifre`    : Encrypt hali ile şifre
@@ -125,7 +126,7 @@ ___
 ##### /etc/group
 ___
 
-* `/etc/group`'un içindeki dosyada grupların özellikleri tutulur. Taslak:  
+* `/etc/group`'un içindeki dosyada grupların özellikleri tutulur. Taslak:
     `grup_ismi:grup_şifresi:grup_id:üye`
 
 ##### /etc/shadow
@@ -133,7 +134,7 @@ ___
 
 * Bu dosya şifreleri ve şifrelerle ilgili zaman bazlı bilgileri de tutan, ASCII formatında dosyalanmış bilgileri içerir.
 * Yalnızca root tarafından görüntülenebilir.
-* Yapısı:  
+* Yapısı:
     `isim:şifre:sondeğişim:min:max:warn:inactive:expire:flag`
     * `-isim`       : Kullanıcı adı
     * `-şifre`      : Encrypt edilmiş şifre * yada ! varsa hesap bloklanmıştır
@@ -143,7 +144,7 @@ ___
     * `-warn`       : Şifrenin geçerliliğini dolmadan kaç gün önce uyarı verileceğini bildirir
     * `-inactive`   : Hesap bloklanmış duruma geçtikten sonra kaç gün geçmiş
     * `-expire`     : Hesabın bloklanmış olduğu gün sayısı
-    * `-flag`       : Reserve edilmiş alan. (kullanılmıyor) 
+    * `-flag`       : Reserve edilmiş alan. (kullanılmıyor)
 
 ##### Sisteme Kullanıcı Ekleme
 
@@ -174,7 +175,7 @@ Enter the new value, or press ENTER for the default
 Is the information correct? [Y/n] Y
 ```
 
-##### Sisteme Kullanıcı Silme
+##### Sistemden Kullanıcı Silme
 
 * `userdel` ve `deluser` komutları kullanılabilir.
 * `userdel [kullanici_adi]
@@ -197,7 +198,7 @@ eorgia@kali:/root$ sudo adduser john
 [sudo] password for cansu:
 Adding user `john' ...
 Adding new group `john' (1002) ...
-Adding new user `john' (1002) with group `john' ... 
+Adding new user `john' (1002) with group `john' ...
 --snip--
 cansu@kali:/root$ su
 Password:
@@ -243,15 +244,15 @@ ___
 
 ##### Örnek
 ```ShellSession
-root@kali:~/mydirectory# ls -l myfile 
+root@kali:~/mydirectory# ls -l myfile
 -rw-r--r-- 1 root root 47 Apr 23 21:15 myfile
 ```
 
 Soldan sağa doğru dosyanın izni (-rw-r--r--), dosyanın sahibi ve sahip olduğu grup (root), dosyanın boyutu (47 byte), dosyanın son değiştirme tarihi (April 23, 21:15) ve sonunda dosyanın ismi (myfile)
 
 ```ShellSession
-root@kali:~/mydirectory# chmod 700 myfile 
-root@kali:~/mydirectory# ls -l myfile 
+root@kali:~/mydirectory# chmod 700 myfile
+root@kali:~/mydirectory# ls -l myfile
 -rwx------u1 root root 47 Apr 23 21:15 myfile
 ```
 Şimdi bu komutu çalıştırdıktan sonra, bu dosyaya sadece root erişebilir. Diğer kullanıcılar `access denied` hatasini alirlar.
@@ -267,20 +268,20 @@ root@kali:# touch dosya_adı
 * Yeni boş bir klasör oluşturmak için
 
 ```ShellSession
-root@kali:~# mkdir mydirectory 
+root@kali:~# mkdir mydirectory
 root@kali:~# ls
-Desktop     mydirectory     myfile 
+Desktop     mydirectory     myfile
 root@kali:~# cd mydirectory/
 ```
 
 ##### Kopyalama, Taşıma, Silme
 
-1. Kopyalama `cp`  
+1. Kopyalama `cp`
     __-r__ parametresi ile dizin içerisindeki herşeyi taşır.
     __-p__ parametresi ile taşıma esnasında dosya haklarını korur.
-2. Taşıma `mv`  
+2. Taşıma `mv`
     __-f__ parametresi ile kaynak dosya hedef dosyaya kopyalanır ve herhangi birşey sorulmaz
-3. Silme `rm`  
+3. Silme `rm`
     __-r__ parametresi ile rekürsif bir şekilde, verilen dosyanın içindeki tüm dosyalar silinebilir.
 
 ```ShellSession
@@ -296,7 +297,7 @@ ___
 * Mevcut birçok linux sunuculu sistem kullanıcı arayüzüne sahip değildir. Bu sunucuları yönetmek veya zaman, performans açısından iyi sonuçlar elde edebilmek için metin editörü kullanmak elzemdir.
 * Linux'ta en çok kullanılan editörler __nano__ ve __vi__'dir.
 * _Nano_, kullanıcı dostudur ve linux ile hazır gelir.
-* _Vi_, kullanımı daha zor olan, buna karşın harika yetenekleri bulunan bir metin editörüdür. 
+* _Vi_, kullanımı daha zor olan, buna karşın harika yetenekleri bulunan bir metin editörüdür.
 
 ##### Nano Editörü
 
@@ -349,8 +350,10 @@ Vi editörünü kullanırken en çok kullanılan komutlar şunlardır
 * `l`           imlecin sağına doğru devam et.
 * `?`           imleçten dosyanın başına doğru arama yapar.
 
+##### Vi'de dosya düzenleme
+
 ```ShellSession
-root@kali:~/mydirectory# vi testfile.txt 
+root@kali:~/mydirectory# vi testfile.txt
 we
 are
 teaching
@@ -364,7 +367,7 @@ Nano'da olduğu gibi Vi'de hemen açıldıktan sonra düzenlemeye başlanamıyor
 
 --
 
-#### veri işleme
+#### Veri İşleme komutları
 
 ##### cat
 ___
@@ -373,7 +376,7 @@ ___
 * İçeriğin tamamını görüntüler
 
 ```ShellSession
-root@kali:~/mydirectory# cat dosyam 
+root@kali:~/mydirectory# cat dosyam
 1 Pazartesi
 2 Kasım
 3 Kali
@@ -411,7 +414,7 @@ root@kali:~/mydirectory# grep September myfile
 ##### sed
 ___
 
-`sed` bir manipulasyon komutudur. Sadece bu komutu özelliklerini anlatmak için bir kitap yazılabilir, biz sadece basit bir örnekle bahsedip geçelim. `sed` için (/) slaş bir sınırlayıcı bir karakterdir. _myfile_ dosyasında tüm _Blackhat_ sözcüklerini _Defcon_'a çevirmek için. 
+`sed` bir manipulasyon komutudur. Sadece bu komutu özelliklerini anlatmak için bir kitap yazılabilir, biz sadece basit bir örnekle bahsedip geçelim. `sed` için (/) slaş bir sınırlayıcı bir karakterdir. _myfile_ dosyasında tüm _Blackhat_ sözcüklerini _Defcon_'a çevirmek için.
 
 ```ShellSession
 root@kali:~/mydirectory# sed 's/Blackhat/Defcon/' myfile
@@ -430,7 +433,7 @@ ___
 Desen eşleştirme komutudur. Örneğin 6 veya daha fazla numaralı konferansları bulmak için:
 
 ```ShellSession
-root@kali:~/mydirectory# awk '$1 >5' myfile 
+root@kali:~/mydirectory# awk '$1 >5' myfile
 6 HackerHalted October
 7 Hackcon April
 ```
@@ -438,22 +441,114 @@ root@kali:~/mydirectory# awk '$1 >5' myfile
 veya her satırda ilk ve üçüncü kelimeleri bulmak için:
 
 ```ShellSession
-root@kali:~/mydirectory# awk '{print $1,$3;}' myfile 
+root@kali:~/mydirectory# awk '{print $1,$3;}' myfile
 1 September
 2 January
 3 September
-4 July 
+4 July
 5 *
-6 October 
+6 October
 7 April
 ```
 
+#### Paket Yönetimi
+
+* Kali paket yönetimi komut satırından `apt-get` komutu ile çalıştırılabilir.
+* Kali’deki kaynak listesini `/etc/apt/sources.list` içinde bulabilirsiniz.
+* Aşağıdaki komutlar ile kali paket yönetimini güncel tutabilirsiniz.
+    `# apt-get update & apt-get -y upgrade`
+* Kali paket yöneticisinden program yüklemek ve silmek, aratmak oldukça basittir.
+    * `apt-get install [paket_adı]`
+    * `apt-get remove [paket_adı]`
+    * `apt-cache search [paket_adı]`
+* Synaptic ile tüm süreçler arayüz ile yönetilebilir.
+    `apt-get install synaptic -y
 
 
+#### Servisler
 
+* Kali güvenlik dağıtımı olmasına rağmen üzerinde linux dağıtımlarında bulunan bazı servisleri barındırmaktadır.
+* Bu tür servislerin amacı güvenlik testlerinde yardımcı öğeler olarak kullanılabilmesidir.
+* Örneğin; Bir sisteme sızma denemesi gerçekleştirildi ve başarıldı, sızılan sistemden tftp ile veri alınması gerekiyor. Bu durumda Kali üzerinde tftp servisi çalıştırılarak gerekli bilgiler sunucudan kolaylıkla transfer edilebilir.
 
+##### Apache servisini başlatma;
 
+Başlatma: `service apache2 start`
+Yeniden başlatma: `service apache2 restart`
+Durduma: `service apache2 stop`
 
+```ShellSession
+root@kali:~/mydirectory# service apache2 start
+[....] Starting web server: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1 for ServerName
+. ok
+```
+￼
+#### Network Ayarları
 
+`ifconfig` komutu ile ağ arayüzlerine IP adresi atanabilir. `ifconfig` komutundan sonra hangi ağ kartının ismi yazılır ise yalnızca o ağ kartının özellikleri görüntülenir.
 
+```ShellSession
+root@kali:~# ifconfig
+eth0 Link encap:Ethernet HWaddr 00:0c:29:df:7e:4d
+    inet addr:192.168.20.9 Bcast:192.168.20.255 Mask:255.255.255.0
+    inet6 addr: fe80::20c:29ff:fedf:7e4d/64 Scope:Link
+    UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1
+    RX packets:1756332 errors:930193 dropped:17 overruns:0 frame:0
+    TX packets:1115419 errors:0 dropped:0 overruns:0 carrier:0
+    collisions:0 txqueuelen:1000
+    RX bytes:1048617759 (1000.0 MiB)  TX bytes:115091335 (109.7 MiB)
+    Interrupt:19 Base address:0x2024
+--snip--
+```
 
+Bu sonuçta şimdilik bizi ilgilendiren kısım sadece IP adresimizin `192.168.20.9` olduğudur. Birde _default gateway_ öğrenmemiz lazım. O da `route` komutu ile
+
+```ShellSession
+root@kali:~# route
+Kernel IP routing table
+Destination   Gateway       Genmask         Flags Metric Ref Use Iface
+default       192.168.20.1  0.0.0.0         UG    0      0   0   eth0
+192.168.20.0  *             255.255.255.0   U     0      0   0   eth0
+```
+
+##### Statik IP Belirleme
+
+Normalde network bağlantımız IP adres çekebilmek için varsayılan olarak dinamik yapılandırma protokolünü (DHCP) kullanacaktır. IP adresimizin değişmemesi için `/etc/network/interfaces` dosyasını istediğimiz metin editöründe açarak
+
+Varsayılan `/etc/network/interfaces` dosyası
+
+```ShellSession
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+# The loopback network interface
+auto lo
+iface lo inet loopback
+```
+
+Değiştirelim:
+
+```ShellSession
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+# The loopback network interface auto lo
+iface lo inet loopback
+auto eth0
+iface eth0 inet static
+address 192.168.20.9
+netmask 255.255.255.0
+gateway 192.168.20.1
+```
+
+##### Network Bağlantılarını Görüntüleme
+
+```ShellSession
+root@kali:~/mydirectory# netstat -antp
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address Foreign Address PID/Program name
+tcp6 0 0 :::80 :::* 15090/apache2
+State LISTEN
+```
+
+##### DAHA FAZLASI İÇİN:
+* [BGA Kali linux](http://www.slideshare.net/bgasecurity/kali-linux)
+* [Kali ile Linux'e Giriş | IntelRAD](http://www.slideshare.net/mmetince/kali-ile-linuxe-giri-intelrad)

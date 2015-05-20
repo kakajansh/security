@@ -5,14 +5,14 @@ Bu bölümde, denemelerimiz için lazım olacak programların kurulumu yapacağ�
 ### Sanal Lab Ayarları
 
 * Kali Linux nedir
+* VMware Kurulumu
 * VirtualBox Kurulumu
     * Kali Linux Kurulumu
     * VirtualBox Guest Additions
-* VMware Kurulumu
 * Kali Linux ayarları
     * Network Ayarları
-    * Ek yazılım
-    * Hedef sanal makineler
+    * Ek yazılım (TODO)
+    * Hedef sanal makineler (TODO)
 * Temel Linux Bilgisi
 
 ### Bash & Python programlama

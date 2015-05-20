@@ -7,7 +7,7 @@ port = input("Enter the port: ")
 ```
 
 ```ShellSession
-root@kali:~/mydirectory# chmod 744 pythonscript.py 
+root@kali:~/mydirectory# chmod 744 pythonscript.py
 root@kali:~/mydirectory# ./pythonscript.py
 Enter the ip: 192.168.20.10
 Enter the port: 80
@@ -18,16 +18,16 @@ Enter the port: 80
 import socket
 ip = raw_input("Enter the ip: ")
 port = input("Enter the port: ")
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 if s.connect_ex((ip, port)):
     print "Port", port, "is closed"
-else: 
+else:
     print "Port", port, "is open"
 ```
 
 ```ShellSession
-root@kali:~/# ./pythonscript.py 
-Enter the ip: 192.168.20.10 
+root@kali:~/# ./pythonscript.py
+Enter the ip: 192.168.20.10
 Enter the port: 80
 Port 80 is open
 ```
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
         printf("%s\n", "Pass your name as an argument");
         return 0;
     }
-    else 
+    else
     {
         printf("Hello %s\n", argv[1]);
         return 0;
@@ -63,7 +63,8 @@ root@kali:~# ./cprogram cansu
 Hello cansu
 ```
 
-
+http://belgeler.istihza.com/py3/
+http://yzgrafik.ege.edu.tr/%7Etekrei/dersler/bbgd_p/BBGD_PIO.pdf
 
 
 

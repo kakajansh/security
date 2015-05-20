@@ -7,7 +7,7 @@
 
 ### Virutal Box Kurulumu
 
-İlk önce VirtualBox sitesine gidip proğramı indirdiyseniz ve sonrasında da bilgisayarınıza kurduysanız, ayarlarmalarına devam edebiliriz.
+İlk önce VirtualBox sitesine gidip proğramı indirdiyseniz ve sonrasında da bilgisayarınıza kurduysanız, ayarlamalarına devam edebiliriz.
 
 1. __New__ tıklayarak yeni bir sanal makine oluşturalım. Sonradan sıkıntı olmaması için isimlendirmeyi benimkiyle aynı devam edebilirsiniz.
 ![][vb1]
