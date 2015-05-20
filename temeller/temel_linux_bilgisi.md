@@ -6,12 +6,9 @@
 * Linux Dosya Sistemi
 * Metin Editörleri
 * Veri İşleme Komutları
-* Process
-* Paket Yönetim Sistemi
-* Sistem İzleme
-
-* Hostname ve Network Ayarları
+* Paket Yönetimi
 * Servisler
+* Network Ayarları
 
 #### Terminal
 ___
@@ -367,7 +364,7 @@ Nano'da olduğu gibi Vi'de hemen açıldıktan sonra düzenlemeye başlanamıyor
 
 --
 
-#### Veri İşleme komutları
+#### Veri İşleme Komutları
 
 ##### cat
 ___
@@ -482,7 +479,7 @@ root@kali:~/mydirectory# service apache2 start
 [....] Starting web server: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1 for ServerName
 . ok
 ```
-￼
+
 #### Network Ayarları
 
 `ifconfig` komutu ile ağ arayüzlerine IP adresi atanabilir. `ifconfig` komutundan sonra hangi ağ kartının ismi yazılır ise yalnızca o ağ kartının özellikleri görüntülenir.
