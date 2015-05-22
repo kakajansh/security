@@ -18,6 +18,46 @@ Yapılacak işlemler:___
 - [ ] [A] Github sayfasi duzenlemeleri
 - [ ] [B] Teslim etme
 
+__KONULAR__
+
+- [ ] Giriş
+- [ ] Genel bilgi
+- [ ] __Temeller__
+    - [x] Sanal Lab ayarları
+        - [x] Kali Linux nedir
+        - [x] VMware Kurulumu
+        - [x] VirtualBox Kurulumu
+            - [x] Kali Linux Kurulumu
+            - [x] VirtualBox Guest Additions
+        - [x] Kali Linux ayarları
+            - [x] Network Ayarları
+            - [ ] Ek yazılım
+            - [ ] Hedef sanal makineler
+        - [x] Temel Linux Bilgisi
+    - [x] Kali Linux kullanımı
+    - [ ] Bash & Python proğramlama
+        - [ ] Bash programlama
+        - [ ] Python programlama
+    - [ ] Metasploit Framework kullanımı
+
+- [ ] __Değerlendirmeler__
+    - [ ] Bilgi toplama
+    - [ ] Güvenlik açıkları bulma
+    - [ ] Trafik yakalama
+
+- [ ] __Saldırılar__
+    - [ ] Exploitation
+    - [ ] Şifre saldırıları
+    - [ ] Client-side exploitation
+    - [ ] SociaL engineering
+    - [ ] Antiwirüs uygulamalarını atlatma
+    - [ ] Post exploitation
+    - [ ] Web uygulamaları
+    - [ ] Kablosuz ağ saldırıları
+
+- [ ] __Mobil hackleme__
+    - [ ] Using the smartphone pentest framework
+
 __EXTRA__
 
 - [ ] [C] dropbox vs kitap kaynaklari yukleme

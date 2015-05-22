@@ -11,9 +11,10 @@ Bu bölümde, denemelerimiz için lazım olacak programların kurulumu yapacağ�
     * VirtualBox Guest Additions
 * Kali Linux ayarları
     * Network Ayarları
-    * Ek yazılım (TODO)
-    * Hedef sanal makineler (TODO)
-* Temel Linux Bilgisi
+    * Ek yazılım
+    * Hedef sanal makineler
+
+### Temel Linux Bilgisi
 
 ### Bash & Python programlama
 
