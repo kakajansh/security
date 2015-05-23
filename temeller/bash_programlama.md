@@ -190,8 +190,11 @@ root@kali:~/# ./pingscript.sh 192.168.2
 --snip--
 ```
 
+##### DAHA FAZLASI İÇİN:
 
-
+* [Bash Kabuğu](http://www.belgeler.org/lis/archive-tlkg-lis-6.html)
+* [Bash Scripting İle Pratik Programlama Reçeteleri](http://www.galkan.net/p/bash-scripting-ile-pratik-programlama.html)
+* [Kabuk Programlama](http://seminer.linux.org.tr/wp-content/uploads/kabukprogramlama.pdf)
 
 
 

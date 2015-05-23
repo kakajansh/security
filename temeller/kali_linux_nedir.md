@@ -11,5 +11,6 @@
 * Masaüstü ortamı olarak BackTrack'teki gibi KDE seçeneği yoktur, yalnızca GNOME masaüstü ortamı kullanılabilir durumdadır.
 * Masaüstü kullanarak erişilebilecek proğramların çoğu, komut satırından çalışan program haline getirilmiştir.
 * İndirme linki [http://www.kali.org/downloads/](http://www.kali.org/downloads/)
+* [Wikipedia](http://tr.wikipedia.org/wiki/Linux)
 
 ![resim](../resim/kurulum/01.png)

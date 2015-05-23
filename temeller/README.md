@@ -20,6 +20,7 @@ Bu bölümde, denemelerimiz için lazım olacak programların kurulumu yapacağ�
 
 * Bash programlama
 * Python programlama
+* C programlarını yazma ve derleme
 
 ### Metasploit Framework kullanımı
 
