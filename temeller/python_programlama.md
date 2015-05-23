@@ -52,10 +52,3 @@ Port 80 is open
 
 * [Python Programlama Dili](http://belgeler.istihza.com/py3/)
 * [Bilgisayar Bilimcisi gibi Düşünmek](http://yzgrafik.ege.edu.tr/%7Etekrei/dersler/bbgd_p/BBGD_PIO.pdf)
-
-
-
-
-
-
-

@@ -47,3 +47,10 @@ Argument atadığımızda ise, _Hello cansu_
 root@kali:~# ./cprogram cansu
 Hello cansu
 ```
+
+-- 
+
+##### DAHA FAZLASI İÇİN:
+
+* [C Programlama Dili'ne Giriş](http://www1.gantep.edu.tr/~bingul/c/index.php)
+* [Sistem Programlama ve İleri C Uygulamaları Kurs Notları](http://www.kaanaslan.com/resource/course_note/download_file.php?file_id=16)
