@@ -1,7 +1,8 @@
 ### C Programlarını Yazma ve Derleme
 
-Son olarakta yazacağımız C proğramlarını Linux'ta nasıl çalıştıracağımıza bakalım. Diğer Bash ve Python gibi scripleme dilleri gibi direk çalıştırlmamakla beraber, ilk önce programımızı bilgisayarın anlayacağı dile çevirip öyle çalıştırmamız lazım. Kali Linux bunu yapabilmemiz için kendisinde GNU derleyicisini bulundurmaktadır. O zaman basit bir örneğe bakalım:
+Son olarakta yazacağımız C proğramlarını Linux'ta nasıl çalıştıracağımıza bakalım. Diğer Bash ve Python gibi scriptleme dilleri gibi direk çalıştırılmamakla beraber, ilk önce programımızı bilgisayarın anlayacağı dile çevirip öyle çalıştırmamız lazım. Kali Linux bunu yapabilmemiz için kendisinde GNU derleyicisini bulundurmaktadır. 
 
+O zaman basit bir örneğe bakalım:
 ```ShellSession
 #include <stdio.h>
 int main(int argc, char *argv[])

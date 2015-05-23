@@ -43,9 +43,10 @@ __KONULAR__
         - [x] Paket Yönetimi
         - [x] Servisler
         - [x] Network Ayarları
-    - [ ] Bash & Python proğramlama
-        - [ ] Bash programlama
-        - [ ] Python programlama
+    - [x] Bash & Python proğramlama
+        - [x] Bash programlama
+        - [x] Python programlama
+        - [x] C Programlarını Yazma ve Derleme
     - [ ] Metasploit Framework kullanımı
 
 - [ ] __Değerlendirmeler__

@@ -16,6 +16,16 @@ Bu bölümde, denemelerimiz için lazım olacak programların kurulumu yapacağ�
 
 ### Temel Linux Bilgisi
 
+* Terminal Nedir?
+* Linux Komutları
+* Kullanıcı Yönetimi
+* Dosya Sistemi
+* Metin Editörleri
+* Veri İşleme Komutları
+* Paket Yönetimi
+* Servisler
+* Network Ayarları
+
 ### Bash & Python programlama
 
 * Bash programlama

@@ -157,12 +157,12 @@ Exploit targets:
 
 * Exploit sonrası çalışıp yetkisiz işlevi gerçekleştirecek içerik.
 * Metasploit Frameworkde kullanılan üst düzey farklı işlevselliğe sahip payloadlar bulunmaktadır. Bunlardan bazıları;
-* Meterpreter
-* DLL Injection
-* Binary Upload
-* PassiveX
-* Download and Exec 
-* Adduser
+    * Meterpreter
+    * DLL Injection
+    * Binary Upload
+    * PassiveX
+    * Download and Exec 
+    * Adduser
 
 `show payloads` komutu ile mevcut payload listesi sıralanabilir. 324 tane var, tabii ki zamanla bu sayı değişecek.
 
