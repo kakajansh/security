@@ -37,7 +37,7 @@ else:
     print "Port", port, "is open"
 ```
 
-Şimdi scriptimizi çalıştırıyoruz. İstenen bilgileri girelim, 192.168.2.10:80 portu açık olduğundan; __Port 80 is open__ sonucu aldık. Bir kere daha tekrar çalıştırarak port numarasını 81 girelim; __Port 81 is closed__ sonucunu alıcağız.
+Şimdi scriptimizi çalıştırıyoruz. İstenen bilgileri girelim, 192.168.2.10:80 portu açık olduğundan; __Port 80 is open__ sonucu aldık. Bir kere daha tekrar çalıştırarak port numarasını 81 girelim; __Port 81 is closed__ sonucunu alacağız.
 
 ```ShellSession
 root@kali:~/# ./pythonscript.py
@@ -46,38 +46,7 @@ Enter the port: 80
 Port 80 is open
 ```
 
-
-
-```ShellSession
-#include <stdio.h>
-int main(int argc, char *argv[])
-{
-    if(argc < 2)
-    {
-        printf("%s\n", "Pass your name as an argument");
-        return 0;
-    }
-    else
-    {
-        printf("Hello %s\n", argv[1]);
-        return 0;
-    }
-}
-```
-
-```ShellSession
-root@kali:~# gcc cprogram.c -o cprogram
-```
-
-```ShellSession
-root@kali:~# ./cprogram
-Pass your name as an argument
-```
-
-```ShellSession
-root@kali:~# ./cprogram cansu
-Hello cansu
-```
+--
 
 ##### DAHA FAZLASI İÇİN:
 
