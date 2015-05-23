@@ -74,10 +74,10 @@ example: ./pingscript.sh 192.168.2
 ##### For döngüsü
 
 Şimdi ise `then`'den sonra `else` ile devam ederek, herhangi bir parametre girdiğimizde yapacağı işlemi yazalım. Yapacağımız işlem yerel ağımızdaki 192.168.2.1 den 192.168.2.254 kadar tüm ağları kontrol etmek. Bunun için `for-loop` döngüsünü kullanıyoruz. 
-    * `for` döngüsü `done` ile bitirilmelidir
-    * `seq 1 254` anlamı 1den 254 kadar olan sayılarda
-    * `ping -c 1` pingin kullanım klavuzına bakarsak, `-c` parametresi girdiğimiz sayı kadar ping'i çalıştıracak. Burda `-c 1` girdiğimiz için sadece bir kere çalışacaktır.
-    * `$1.$x` = `[girdiğimiz_parametre.x_değeri]
+* `for` döngüsü `done` ile bitirilmelidir
+* `seq 1 254` anlamı 1den 254 kadar olan sayılarda
+* `ping -c 1` pingin kullanım klavuzına bakarsak, `-c` parametresi girdiğimiz sayı kadar ping'i çalıştıracak. Burda `-c 1` girdiğimiz için sadece bir kere çalışacaktır.
+* `$1.$x` = `[girdiğimiz_parametre.x_değeri]
 
 ```ShellSession
 #!/bin/bash
@@ -140,8 +140,8 @@ root@kali:~/# ./pingscript.sh 192.168.2
 ```
 
 Şimdi aldığımız son sonuçlarıda daha güzel bir görünüme getirmek için sadece IP adreslerini ekrana yazdıralım. `cut` komutu ile sadece dördüncü sütünda bulunan verileri yazdırabiliriz.
-    * `-d  --delimiter`   => sütünların bölüneceği karakter, `-d" "` her boşluğun olduğu yer birer sütün
-    * `-f --fields`      => kaçıncı sütünün alınacağı, `-f4` dördüncü sütün
+* `-d  --delimiter`   => sütünların bölüneceği karakter, `-d" "` her boşluğun olduğu yer birer sütün
+* `-f --fields`      => kaçıncı sütünün alınacağı, `-f4` dördüncü sütün
 
 ```ShellSession
 #!/bin/bash
