@@ -36,7 +36,7 @@ __KONULAR__
     - [x] Temel Linux Bilgisi
         - [x] Terminal Nedir?
         - [x] Linux Komutları
-        - [x] Linuxta Kullanıcı Yönetimi
+        - [x] Kullanıcı Yönetimi
         - [x] Dosya Sistemi
         - [x] Metin Editörleri
         - [x] Veri İşleme Komutları
