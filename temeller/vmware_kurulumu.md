@@ -13,7 +13,7 @@ VMware ve VirtualBox amaçları aynı, iki farklı proğramlardır. Hızlı bir 
 
 VMware kullanıcılarına kolaylık; [Torrent](http://www.utorrent.com/) kuralım ve [bu linkten](http://www.nostarch.com/download/kali-linux-1.0.6-vm-i486.torrent) hazır kurulmuş Kali'mizi indirelim. Sonradan tıkla çalıştır. Herhangi bir sebeple çalışmadığı halde, VirtualBox için gösterdiğimiz gibi kolayca Kali indirirek, kendiniz de oluşturabilirsiniz.
 
-![resim]()
+![resim](../resim/hedef/k2.png)
 
 Usename: `root`
-Password: `toor
+Password: `toor`

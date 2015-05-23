@@ -36,13 +36,13 @@ scriptimizi çalıştırabilme yetkisini verelim;
 root@kali:~/# chmod 744 pingscript.sh
 ```
 
-scriptimizi çalıştırma esnasına dikkat edeçeğimiz bir konu daha, çalıştıracağamız sciptin olduğu dizinin terminal $PATH değerinde olup olmaması
+scriptimizi çalıştırma esnasına dikkat edeceğimiz bir konu daha, çalıştıracağamız sciptin olduğu dizinin terminal $PATH değerinde olup olmaması
 
 ```ShellSession
 root@kali:~/# echo $PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
-Dikkat edersek bizim scriptin olduğu `/root`dizini yok. O yüzden komutu çalıştırmak için `./pingscript.sh` olarak yazmamız gerekiyor.
+Dikkat edersek bizim scriptin olduğu `/root` dizini burda sıralanmamış. O yüzden komutu çalıştırmak için `./pingscript.sh` olarak yazmamız gerekiyor.
 
 ```ShellSession
 root@kali:~/# ./pingscript.sh 
@@ -51,7 +51,8 @@ example: ./pingscript.sh 192.168.20
 ```
 
 ##### if ile koşul ekleme
---
+
+Şimdi yukarda yazdığımız basit bir bash scriptine koşul eklemeyi öğrenelim. Scriptin yapacağı işlem, kullanıcının herhangi bir argument girip girmediğini kontrol etmek. Kullanıcın girdiği ilk argumente erişebilmek için `$1` kullanıyoruz, yani bash dilinde `if ['$1' == '']`, $1 argumenti boş ise işlem yap anlamına geliyor.
 
 ```ShellSession
 #!/bin/bash
@@ -63,7 +64,8 @@ fi
 ```
 
 ##### For döngüsü
---
+
+
 
 ```ShellSession
 #!/bin/bash

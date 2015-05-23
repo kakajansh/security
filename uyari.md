@@ -33,8 +33,16 @@ __KONULAR__
             - [x] Network Ayarları
             - [ ] Ek yazılım
             - [ ] Hedef sanal makineler
-        - [x] Temel Linux Bilgisi
-    - [x] Kali Linux kullanımı
+    - [x] Temel Linux Bilgisi
+        - [x] Terminal Nedir?
+        - [x] Linux Komutları
+        - [x] Linuxta Kullanıcı Yönetimi
+        - [x] Dosya Sistemi
+        - [x] Metin Editörleri
+        - [x] Veri İşleme Komutları
+        - [x] Paket Yönetimi
+        - [x] Servisler
+        - [x] Network Ayarları
     - [ ] Bash & Python proğramlama
         - [ ] Bash programlama
         - [ ] Python programlama

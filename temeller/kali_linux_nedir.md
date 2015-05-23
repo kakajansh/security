@@ -12,4 +12,4 @@
 * Masaüstü kullanarak erişilebilecek proğramların çoğu, komut satırından çalışan program haline getirilmiştir.
 * İndirme linki [http://www.kali.org/downloads/](http://www.kali.org/downloads/)
 
-![resim]()
+![resim](../resim/kurulum/01.png)

@@ -2,8 +2,8 @@
 
 * Terminal Nedir?
 * Linux Komutları
-* Linuxta Kullanıcı Yönetimi
-* Linux Dosya Sistemi
+* Kullanıcı Yönetimi
+* Dosya Sistemi
 * Metin Editörleri
 * Veri İşleme Komutları
 * Paket Yönetimi
@@ -202,7 +202,7 @@ Password:
 root@kali:~#
 ```
 
-#### Dosya Dizin İşlemleri
+#### Dosya Sistemi
 ___
 
 * Dosya ve dizinler üzerinde çeşitli işlemler yapılabilir.
@@ -449,6 +449,7 @@ root@kali:~/mydirectory# awk '{print $1,$3;}' myfile
 ```
 
 #### Paket Yönetimi
+___
 
 * Kali paket yönetimi komut satırından `apt-get` komutu ile çalıştırılabilir.
 * Kali’deki kaynak listesini `/etc/apt/sources.list` içinde bulabilirsiniz.
@@ -463,6 +464,7 @@ root@kali:~/mydirectory# awk '{print $1,$3;}' myfile
 
 
 #### Servisler
+___
 
 * Kali güvenlik dağıtımı olmasına rağmen üzerinde linux dağıtımlarında bulunan bazı servisleri barındırmaktadır.
 * Bu tür servislerin amacı güvenlik testlerinde yardımcı öğeler olarak kullanılabilmesidir.
@@ -481,6 +483,7 @@ root@kali:~/mydirectory# service apache2 start
 ```
 
 #### Network Ayarları
+___
 
 `ifconfig` komutu ile ağ arayüzlerine IP adresi atanabilir. `ifconfig` komutundan sonra hangi ağ kartının ismi yazılır ise yalnızca o ağ kartının özellikleri görüntülenir.
 
