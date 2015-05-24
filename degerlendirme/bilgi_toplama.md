@@ -165,7 +165,18 @@ Bir domaine ait internette dolaşan (arama motroları vasıtası ile bulunabilec
 ```ShellSession
 root@kali:~# theharvester -d bulbsecurity.com -l 500 -b all
 
-******************************************************************* ** * | |_| |__ ___ /\ /\__ _ _ ____ _____ ___| |_ ___ _ __ * * | __| '_ \ / _ \ / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| * * | |_| | | | __/ / __ / (_| | | \ V / __/\__ \ || __/ | * * \__|_| |_|\___| \/ /_/ \__,_|_| \_/ \___||___/\__\___|_| * ** * TheHarvester Ver. 2.2a * * Coded by Christian Martorella * * Edge-Security Research * * cmartorella@edge-security.com * *******************************************************************
+*******************************************************************
+*                                                                 *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __| '_ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* TheHarvester Ver. 2.5                                           *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*******************************************************************
 
 Full harvest..
 [-] Searching in Google..
@@ -223,5 +234,7 @@ Google Mail sunucularına sızmaya çalışmak pentest denemelerinin dışında 
 [maltego5]: ../resim/bilgi/maltego5.png
 
 ##### Port Arama
+
+(TODO)
 
 http://www.slideshare.net/bgasecurity/gvenlik-testlerinde-bilgi-toplama
