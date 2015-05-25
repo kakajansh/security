@@ -4,33 +4,33 @@ Bu bölümde, denemelerimiz için lazım olacak programların kurulumu yapacağ�
 
 ### Sanal Lab Ayarları
 
-* Kali Linux nedir
-* VMware Kurulumu
-* VirtualBox Kurulumu
-    * Kali Linux Kurulumu
-    * VirtualBox Guest Additions
-* Kali Linux ayarları
-    * Network Ayarları
-    * Ek yazılım
-    * Hedef sanal makineler
+* [Kali Linux nedir](kali_linux_nedir.md)
+* [VMware Kurulumu](vmware_kurulumu.md)
+* [VirtualBox Kurulumu](virtualbox_kurulumu.md)
+    * [Kali Linux Kurulumu](kali_linux_kurulumu.md)
+    * [VirtualBox Guest Additions](virtualbox_guest_additions.md)
+* [Kali Linux ayarları]()
+    * [Network Ayarları](network_ayarlari.md)
+    * [Ek yazılım](ek_yazilim.md)
+    * [Hedef sanal makineler](hedef_sanal_makineler.md)
 
 ### Temel Linux Bilgisi
 
-* Terminal Nedir?
-* Linux Komutları
-* Kullanıcı Yönetimi
-* Dosya Sistemi
-* Metin Editörleri
-* Veri İşleme Komutları
-* Paket Yönetimi
-* Servisler
-* Network Ayarları
+* [Terminal Nedir?](temel_linux_bilgisi.md#terminal)
+* [Linux Komutları](temel_linux_bilgisi.md#linux-komutları)
+* [Kullanıcı Yönetimi](temel_linux_bilgisi.md#kullanıcı-yönetimi)
+* [Dosya Sistemi](temel_linux_bilgisi.md#dosya-sistemi)
+* [Metin Editörleri](temel_linux_bilgisi.md#metin-editörleri)
+* [Veri İşleme Komutları](temel_linux_bilgisi.md#veri-İşleme-komutları)
+* [Paket Yönetimi](temel_linux_bilgisi.md#paket-yönetimi)
+* [Servisler](temel_linux_bilgisi.md#servisler)
+* [Network Ayarları](temel_linux_bilgisi.md#network-ayarları)
 
 ### Bash & Python programlama
 
-* Bash programlama
-* Python programlama
-* C programlarını yazma ve derleme
+* [Bash programlama](bash_programlama.md)
+* [Python programlama](python_programlama.md)
+* [C programlarını yazma ve derleme](c_programlarini_yazma_ve_derleme.md)
 
 ### Metasploit Framework kullanımı
 
