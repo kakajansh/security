@@ -69,5 +69,5 @@ __KONULAR__
 
 __EXTRA__
 
-- [ ] [C] dropbox vs kitap kaynaklari yukleme
-- [ ] [C] screenshot yukleme icin arastirma
+- [x] [C] ~~dropbox vs kitap kaynaklari yukleme~~
+- [x] [C] screenshot yukleme icin arastirma
