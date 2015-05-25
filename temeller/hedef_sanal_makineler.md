@@ -92,6 +92,16 @@ TODO: Installing Vulnerable Software
 
 #### Windows 7
 
+Verdiğimiz linkten Windows 7 sistemini de indirdikten sonra, Windows XP olduğu gibi otomatik güncellemeyi kapatalım ve network ayarlarına giderek statik IP adresi belirleyelim. İndirdiğimiz Windows 7 sisteminin kullanıcı şifresi varsayılan olarak: __Passw0rd!__ Şimdi ise, denemelerimiz için lazım olacak bazı programların kurulumunu yapalım.
+
+* Java 7 Update 6 (Java'nın tarihi geçmiş versiyonu): http://www.oldapps.com/java.php?old_java=8120/
+* Winamp 5.55 versiyonu: http://www.oldapps.com/winamp.php?old_ winamp=247/
+* Mozilla Firefox'un son sürümünü: http://www.mozilla.org/
+* Microsoft Security Essentials: http://windows.microsoft.com/en-us/windows/security-essentials-download/ Kurulumunu yaptıktan sonra otomatik güncelleme önerisini ve korumasını şimdilik kapatıyoruz. __Real-time Protection > Turn on real-time protection (recommended) işaretini kaldır > Save changes__
+* Son olarak ta, yukarıda torrentle indirmiş olduğumuz __BookApp__ web uygulamasını kuralım. Sürükle & bırak yaparak sistemimizden Windows 7'ye atalım.  
+    [KURULUMU](BookApp.md)
+
+
 TODO: windows7
 
 Tebrik ederim! Hedef sanal makinelerimizin kurulumunu tamamlamış bulunmaktayız. Yorucu bir gündü.. Birazda kafa dağıtmaya ne dersiniz? Ubuntu açalım, ordan __Games > Nibbles__ oyununu açalım.. öyle devam ederiz..
