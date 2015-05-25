@@ -1,6 +1,6 @@
 ### BookApp Kurulumu
 
-BookApp dosyasını http://nostarch.com/pentesting/ linkininden indirdikten sonra, 7-zip programıyla açalım. Şifresi: _1stPentestBook?!_ Aşağıda adım adım Windows 7 sistemimize nasıl yükleyeceğimizi göstereceğiz.
+BookApp dosyasını [http://nostarch.com/pentesting/] linkininden indirdikten sonra, 7-zip programıyla açalım. Şifresi: _1stPentestBook?!_ Aşağıda adım adım Windows 7 sistemimize nasıl yükleyeceğimizi göstereceğiz.
 
 #### Komutları Administrator Yetkisi ile Çalıştırma
 Bu talimatta çalıştıracağımız tüm komutları administrator erişimi ile çalıştırmamız gerekiyor. Sağ tıklayarak __Run as administrator__ seçilir.
@@ -9,7 +9,7 @@ Bu talimatta çalıştıracağımız tüm komutları administrator erişimi ile 
 
 #### ISS Kurulumu
 
-_Step1-install-iss.bat__ dosyasını administrator olarak açalım. Kurulum tamamlandıktan sonra pencerenin kendisi kapanacaktır.
+_Step1-install-iss.bat_ dosyasını administrator olarak açalım. Kurulum tamamlandıktan sonra pencerenin kendisi kapanacaktır.
 
 ![b2]
 
@@ -115,7 +115,7 @@ _BookApp/SQL_ dizininden _sqlxml_x86-v4.msi_ dosyasını çalıştıralım. Lice
 
 ![b17]
 
-5. Son olarak, Internet Explorer ile http://localhost/bookservice/ adresine gidelim. Herşeyi doğru takip ettiyseniz, sitemizin anasayfasını göreceksiniz.
+5. Son olarak, Internet Explorer ile [http://localhost/bookservice/] adresine gidelim. Herşeyi doğru takip ettiyseniz, sitemizin anasayfasını göreceksiniz.
 
 ![b18]
 
@@ -129,6 +129,7 @@ _BookApp/SQL_ dizininden _sqlxml_x86-v4.msi_ dosyasını çalıştıralım. Lice
 [b8]: ../resim/book/b8.png
 [b9]: ../resim/book/b9.png
 [b10]: ../resim/book/b10.png
+[b11]: ../resim/book/b11.png
 [b12]: ../resim/book/b12.png
 [b13]: ../resim/book/b13.png
 [b14]: ../resim/book/b14.png
