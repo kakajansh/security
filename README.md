@@ -14,25 +14,25 @@
 * [Uyarı][1]
 * [Giriş][2]
 * [Genel bilgi][3]
-* [__Temeller__](temeller/)
-    * [Sanal Lab ayarları](temeller/README.md)
-    * Kali Linux kullanımı
-    * Bash & Python proğramlama
-    * Metasploit Framework kullanımı
+* [__Temeller__](temeller/README.md#temeller)
+    * [Sanal Lab ayarları](temeller/README.md#sanal-lab-ayarları)
+    * [Temel Linux Bilgisi](temeller/README.md#temel-linux-bilgisi)
+    * [Bash & Python proğramlama](temeller/README.md#bash--python-programlama)
+    * [Metasploit Framework kullanımı](temeller/README.md#metasploit-framework-kullanımı)
 
-* __Değerlendirmeler__
-    * Bilgi toplama
-    * Güvenlik açıkları bulma
-    * Trafik yakalama
+* [__Değerlendirmeler__](degerlendirme/README.md)
+    * [Bilgi toplama](degerlendirme/README.md#bilgi-toplama)
+    * [Güvenlik açıkları bulma](README.md#güvenlik-açıkları-bulma)
+    * [Trafik yakalama](degerlendirme/README.md#trafik-yakalama)
 
-* __Saldırılar__
+* [__Saldırılar__](saldirilar/README.md)
     * Exploitation
     * Şifre saldırıları
     * Client-side exploitation
     * SociaL engineering
     * Antiwirüs uygulamalarını atlatma
     * Post exploitation
-    * Web uygulamaları
+    * [Web uygulamaları](saldirilar/web_uygulamalari.md)
     * Kablosuz ağ saldırıları
 
 * __Mobil hackleme__
