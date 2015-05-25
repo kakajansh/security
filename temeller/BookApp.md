@@ -1,6 +1,6 @@
 ### BookApp Kurulumu
 
-BookApp dosyasını http:// nostarch.com/pentesting/ linkininden indirdikten sonra, 7-zip programıyla açalım. Şifresi: _1stPentestBook?!_ Sonra aşağıdaki adımları takip ederk Windows 7 sistemimize nasıl yükleyeceğimizi göstereceğiz.
+BookApp dosyasını http://nostarch.com/pentesting/ linkininden indirdikten sonra, 7-zip programıyla açalım. Şifresi: _1stPentestBook?!_ Aşağıda adım adım Windows 7 sistemimize nasıl yükleyeceğimizi göstereceğiz.
 
 #### Komutları Administrator Yetkisi ile Çalıştırma
 Bu talimatta çalıştıracağımız tüm komutları administrator erişimi ile çalıştırmamız gerekiyor. Sağ tıklayarak __Run as administrator__ seçilir.
