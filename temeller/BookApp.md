@@ -1,6 +1,6 @@
 ### BookApp Kurulumu
 
-BookApp dosyasını [http://nostarch.com/pentesting/] linkininden indirdikten sonra, 7-zip programıyla açalım. Şifresi: _1stPentestBook?!_ Aşağıda adım adım Windows 7 sistemimize nasıl yükleyeceğimizi göstereceğiz.
+BookApp dosyasını http://nostarch.com/pentesting/ linkininden indirdikten sonra, 7-zip programıyla açalım. Şifresi: _1stPentestBook?!_ Aşağıda adım adım Windows 7 sistemimize nasıl yükleyeceğimizi göstereceğiz.
 
 #### Komutları Administrator Yetkisi ile Çalıştırma
 Bu talimatta çalıştıracağımız tüm komutları administrator erişimi ile çalıştırmamız gerekiyor. Sağ tıklayarak __Run as administrator__ seçilir.
@@ -115,7 +115,7 @@ _BookApp/SQL_ dizininden _sqlxml_x86-v4.msi_ dosyasını çalıştıralım. Lice
 
 ![b17]
 
-5. Son olarak, Internet Explorer ile [http://localhost/bookservice/] adresine gidelim. Herşeyi doğru takip ettiyseniz, sitemizin anasayfasını göreceksiniz.
+5. Son olarak, Internet Explorer ile [http://localhost/bookservice/](http://localhost/bookservice/) adresine gidelim. Herşeyi doğru takip ettiyseniz, sitemizin anasayfasını göreceksiniz.
 
 ![b18]
 
