@@ -14,8 +14,8 @@
 * [Uyarı][1]
 * [Giriş][2]
 * [Genel bilgi][3]
-* __Temeller__
-    * Sanal Lab ayarları
+* [__Temeller__](temeller/)
+    * [Sanal Lab ayarları](temeller/README.md)
     * Kali Linux kullanımı
     * Bash & Python proğramlama
     * Metasploit Framework kullanımı
