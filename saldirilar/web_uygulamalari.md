@@ -12,7 +12,11 @@ Proxy kullanarak bizim tarayıcımız ile web uygulaması arasında geçen sorgu
 
 Burp Suite başlatmak için __Applications > Kali Linux > Web Applications > Web Application Fuzzers > burpsuite__ 
 
+![resim1]
+
 Aşağıdaki gibi __Proxy__ üstüne basalım. Varsayılan olarak, __Intercept is on__ özelliği açık olacaktır; bu web tarayıcısndan giden istekleri yakalayarak bize onları sunucuya göndermeden önce görmemizi, hatda üstünde değişikler yapmamızı sağlayacaktır.
+
+![resim2]
 
 Şimdi Kali Linux'umuzda çalışan tarayıcıya web trafiğin Burp Suite üzerinden geçmesini söylememiz gerekiyor.
 
@@ -20,17 +24,29 @@ Aşağıdaki gibi __Proxy__ üstüne basalım. Varsayılan olarak, __Intercept i
 2. Connection sağında olan __Settings__ tıklayalım.
 3. Resimdeki gibi, __Manul proxy configuration__ seçerek IP adrese __127.0.0.1__ ve porta __8080__ girelim. Böylelikle Burp Proxy'nin varsayılan portuna yönlendirmiş olcağız.
 
+![resim3]
+
 Iceweasel'in trafiği Burp Suite üzerinden aktardığına emin olmak için, Windows 7 makinemizde çalışan http://192.168.2.12/bookservice adresini açalım.
 
 Bağlantının tarayıcıda askıya alındığı görülecektir, ve resimde olduğu gibi hem tarayıcıda hem de Burp Suit'ta bookservice sitesinin ana sayfası için `HTTP GET` isteği gönderildiği görüntülenecektir.
 
+![resim4]
+
 Aldığımız `HTTP GET` sorgusu için daha detaylı bir bilgi edinebiliriz. Biraz sonra göreceğiz ki, bunları sunucuya göndermeden bazı değişiklikler de yapabiliceğiz. Ama şimdilik sadece __Forward__ basarak devam ettirelim. Tarayıcıya geri dönersek, server'in bizi bookservice sitesinin ana sayfayasına yönlendirdiğini göreceğiz.
+
+![resim5]
 
 Şimdi, bu siteye bir üye olalım. Yukarıda sağda __Login__ tıklayalım, sonra sorguyu proxy'dan server'a forward yapalım. Aynı şeyi Sign up sayfasına gidebilmek için __New User__ üstüne tıklayarak ta tekrarlayalım.
 
+![resim6]
+
 Kullanıcı adı, şifre, ve mail adresimizi girdikten sonra __Go__ basalım. Sorgumuz resimde gösterildiği gibi Bupr Proxy tarafından yakalanmış olması lazım.
 
+![resim7]
+
 Ek olarak, okumak için pek iyi olmayan _raw request (ham sorgu)_ yerine __Params__ basarak Burp Suit'in sorgumuzu daha okunabilir halini göstermesini sağlayabiliriz.
+
+![resim8]
 
 Mesela, yeni açtığımız ekranda kullanıcı alanı _cansu_, şifre alanı _password_, ve mail alanı cansu@hotmail.com gösterir.
 
@@ -66,6 +82,8 @@ SELECT username FROM users WHERE username='' or '1'='1' AND password='' or '1'='
 
 `'OR '1'='1`  herzaman doğru olduğundan, çalışmakta olan `SELECT` sorgusu herzaman girilen verinin doğru olup olmadığına bakmaksızın veritanındaki ilk kullanıcı isim ve şifreyi verecektir.
 
+![resim9]
+
 ##### SQL Injection Güvenlik Açıkları İçin Test
 
 SQL Injection güvenlik açığını bulmak için ilk yapacağımız test tek tırnak işareti ile SQL sorgusunu kapatmayı denemek olacaktır. Eğer SQL injection açığı varsa, eklediğimiz bu terk tırnak işareti yüzünden SQL hatası alacağız, çünkü sorgu cümlesi bitmiş ve ekstra tek tırnak işareti SQL hatası vermiş olacaktır. Bu hata bize o sitenin SQL açığı olduğunun habercisidir.
@@ -89,6 +107,8 @@ http://192.168.20.12/bookservice/bookdetail.aspx?id=2 or 1 in (SELECT DB_NAME(0)
 ```
 
 Bu sorgu _Conversion failed when converting the nvarcar value 'BookApp' to data type int_ hatası vermektedir, yani veritabanındaki ilk isim BookApp.
+
+![resim10]
 
 ##### SQLMap kullanımı
 
@@ -128,9 +148,15 @@ Bizim üstünde deneme yaptığımız bookservice uygulaması kullanıcı kimlik
 
 Mesela, giriş sayfasındaki kullanıcı adı ve şifre alanların her ikisine de tek tırnak işareti (') koymayı deneyelim. Aşağıdakiye benzer bir hatayla karşılaşacağız.
 
+![resim11]
+
 Mantık SQL de yaptığımızın aynısı, hata veriyorsa demekki burda bir SQL injection açığı var ve bizim sızma yapabilmemiz için bir yoldur. Burp Proxy programı ile sorguları izleyelim ve __txtUser__ ve __txtPass__ değerlerine `' or '1'='1` atayalım.
 
+![resim12]
+
 Yaptığımız bu sorgu Xpath'a kullanıcı adı ve şifresi boş veya 1=1 olan veriye döndür demektir. 1=1 herzaman `true` yani doğru olacağından kullanıcı adı boş olan veya mevcut bir kullanıcıyı sorgulamaktadır. Böylece biz bu metodla XML dosyasında saklanan ilk kullanıcın ismiyle giriş yapmış oluyoruz, yani _Mike_.
+
+![resim13]
 
 ##### Yerel Dosya İçerme
 
@@ -138,7 +164,11 @@ Web uygulamalarında bulunan diğer bir önemli açıklardan biri de _yerel dosy
 
 Bizim bookservice uygulamamız da bu açığı içermektedir. _Mike_ olarak __Profile > View Newsletters__ gidelim. Listteki ilk newsletter tıklayarak içeriğine bir bakalım. 
 
+![resim14]
+
 Şimdi ise sorguyu tekrarlayarak, Burp Proxy ile izleyelim:
+
+![resim15]
 
 __Params__'a gelerek, _c:\inetpub\wwwroot\Book\NewsLetter\Mike@Mike.com\Web Hacking Review.txt_ parametresini not alalım. Bu _c:\inetpub\wwwroot\Book\NewsLetter\Mike_ yolu bize newsletter özelliğinin yerel dosya sisteminden çekildiği konusunda fikir vermekte. _Newsletter_ dizininde _Mike@Mike.com_ dosyasının olduğunu da görebiliyoruz. Burdan diyebilir ki; Büyük ihtimalle siteni newsletter bölümüne kaydolan her kullanıcın da böyle bir dosyası vardır. 
 
@@ -146,9 +176,13 @@ Bir diğer konu da, uygulamamızın asıl yolu tahmin edebileceğimiz gibi _c:\i
 
 Eğer biz parametrelerdeki dosya ismini uygulamadaki başka bir dosya ismine değiştirirsek? Uygulamanın tüm kaynak koduna erişebilirmiyiz? Mesela, dosya ismini `C:\inetpub\wwwroot\Book\Search.aspx` olarak değiştirsek ve sorguyu çalıştırsak.
 
+![resim16]
+
 Gördüğünüz gibi, _Search.aspx_ dosyasının kaynak kodunu Newsletter kutusunda gösterildi.
 
 Belki biz daha hassas bilgilerin saklandığı dosyalara da erişebiliriz. Mesela, kullanıcı isimlerin ve şifrelerin bir XML dosyasında saklandığını biliyoruz. Bunun için birkaç genel dosya isimlerini tahmin ederek bulabiliriz. XML kimlik doğrulamada kullanılan çözümler bize dosya isminin _AuthInfo.xml_ olduğuna dair bir ipucu verebilir. Burp Proxy ile sorguyu izleyelim, ve sorgudaki dosya ismini `C:\inetpub\wwwroot\Book\AuthInfo.xml` olarak değiştirelim.
+
+![resim17]
 
 Gördüğünüz gibi, şimdi kullanıcı adlarına ve şifrelerine düz bir metin olarak erişim sağlayabiliyoruz. Yukarda çalıştırdığımız sorgunun niye _Mike_ döndürdügünü de bu ismin ilk sırada olmasından bilebiliriz.
 
@@ -168,13 +202,27 @@ Yani, saldırıcı _file_ parametresi yerine uzaktaki _http://saldıran_ip/zarar
 
 
 
-
-
-
-
-
-
-
+[resim1]: ../resim/ataklar/web/1.png
+[resim2]: ../resim/ataklar/web/2.png
+[resim3]: ../resim/ataklar/web/3.png
+[resim4]: ../resim/ataklar/web/4.png
+[resim5]: ../resim/ataklar/web/5.png
+[resim6]: ../resim/ataklar/web/6.png
+[resim7]: ../resim/ataklar/web/7.png
+[resim8]: ../resim/ataklar/web/8.png
+[resim9]: ../resim/ataklar/web/9.png
+[resim10]: ../resim/ataklar/web/10.png
+[resim12]: ../resim/ataklar/web/12.png
+[resim13]: ../resim/ataklar/web/13.png
+[resim14]: ../resim/ataklar/web/14.png
+[resim15]: ../resim/ataklar/web/15.png
+[resim16]: ../resim/ataklar/web/16.png
+[resim17]: ../resim/ataklar/web/17.png
+[resim18]: ../resim/ataklar/web/18.png
+[resim19]: ../resim/ataklar/web/19.png
+[resim20]: ../resim/ataklar/web/20.png
+[resim21]: ../resim/ataklar/web/21.png
+[resim22]: ../resim/ataklar/web/22.png
 
 
 
