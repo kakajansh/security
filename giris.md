@@ -4,29 +4,33 @@ Günümüz dünyasında her geçen gün bireyler, şirketler, kurumlar ve devlet
 
 ##### __Amaç__
 
-* Bilgisayar güvenliği konusunda türkçe kaynak neredeyse yok denebilecek kadar azdır. Google'ın herşeyi bildiğine dair ne kadar inancımız olsa da, bu konuda sağlam bir bilgi sahibi olmak oldukça zordur. Araştırma yaptıysanız göreceksiniz ki _herşey hakkında hiçbir şey_ bilgi denizine dalacaksınız. Bilgilerin çoğu ya eski ya da yeterli uygulama örnekleri bulunmadığından takip edilmesi zordur. Yaptığımız çalışmanın her örneği şahsımız tarafından denenmiş, ve sizin de kolayca takip edebilmeniz için adım adım anlatımı resimlerle gösterilmiştir.
+> Bilgisayar güvenliği konusunda türkçe kaynak neredeyse yok denebilecek kadar azdır. Google'ın herşeyi bildiğine dair ne kadar inancımız olsa da, bu konuda sağlam bir bilgi sahibi olmak oldukça zordur. Araştırma yaptıysanız göreceksiniz ki _herşey hakkında hiçbir şey_ bilgi denizine dalacaksınız. Bilgilerin çoğu ya eski ya da yeterli uygulama örnekleri bulunmadığından takip edilmesi zordur. Yaptığımız çalışmanın her örneği şahsımız tarafından denenmiş, ve sizin de kolayca takip edebilmeniz için adım adım anlatımı resimlerle gösterilmiştir.
 
 ##### __Çalışmanızın kaynağı nedir?__
 
-* Çalışmamızın ana kaynağı __Georgia Weidman__ tarafından __2014__ senesinde yazılmış __PENETRATION TESTING__ kitabıdır. Yanı sıra türkçe kaynaklarından da faydalanarak ekleme çıkarma yapılmıştır. Ayrıca konuların son kısmında bulunan __DAHA FAZLASI__ bölümünde o konu için kendizi ilerletebileceğiniz bir kaynak listesi oluşturulmuştur.
+> Çalışmamızın ana kaynağı __Georgia Weidman__ tarafından __2014__ senesinde yazılmış __PENETRATION TESTING__ kitabıdır. Yanı sıra türkçe kaynaklarından da faydalanarak ekleme çıkarma yapılmıştır. Ayrıca konuların son kısmında bulunan __DAHA FAZLASI__ bölümünde o konu için kendizi ilerletebileceğiniz bir kaynak listesi oluşturulmuştur.
 
-* __Beklentilerim ne olmalı?__
+--- 
+
+##### __Beklentilerim ne olmalı?__
 
 > _Linux, terminal, bash, python, sql injections, xss, exploit, payload, metasploit_ vb terimleri duymuşsanız, ama bir türlü bir araştırma yapmak için zaman ve mekan musait olmadığından öğrenememişseniz; iyi bir başlangıç noktası olabilir.
 
-* __Beklentilerim ne olmamalı?__
+##### __Beklentilerim ne olmamalı?__
 
 > Dikkat ettiyseniz çalışmamız, bir kuruma zarar verme, şifre kırma, hesap çalma için amaçlanmamıştır. Kurduğumuz sistemde saldırgana karşı alacağımız önlemleri öğrenmek amaçlıdır.
 
-* __Hata buldum, ne yapmalıyım?__
+---
+
+##### __Hata buldum, ne yapmalıyım?__
 
 > Yazı, dilbigisi hataları, anlatım bozuklukları, tekniki hatalar olabilir. Github'a giriş yaparak __Issues__ bölümünden bildirebilirsiniz. Bir yabancı olarak Türkçe yazdığımızdan normaldir :) 
 
-* __Yaptığın çalışmayı tebrik etmek isterim__
+##### __Yaptığın çalışmayı tebrik etmek isterim__
 
 > Yukarıda bir __STAR__ :star: tıklayarak memnuniyetinizi bildirebilirsiniz.
 
-* __Niye PDF veya Word dosyası değilde Github?__
+##### __Niye PDF veya Word dosyası değilde Github?__
 
 > Aslında, şahsen Github'y ilk kez bu şekil büyük çaplı bir çalışmada kullanıyorum. O yüzden ilk başta Markdown öğrenme, dosya düzenlemeleri baya bir karmaşık gelmişti. Ama Markdown yazı stiline alışınca, diğerlerine göre daha hızlı bir sonuç elde edilebilmektedir. Eminim siz de bu tercihi yaptığıma memnun kalacaksınız :) 
 Fark olarak başlıca şunlar:
