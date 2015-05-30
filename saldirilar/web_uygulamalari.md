@@ -170,7 +170,7 @@ Bizim bookservice uygulamamız da bu açığı içermektedir. _Mike_ olarak __Pr
 
 ![resim15]
 
-__Params__'a gelerek, _c:\inetpub\wwwroot\Book\NewsLetter\Mike@Mike.com\Web Hacking Review.txt_ parametresini not alalım. Bu _c:\inetpub\wwwroot\Book\NewsLetter\Mike_ yolu bize newsletter özelliğinin yerel dosya sisteminden çekildiği konusunda fikir vermekte. _Newsletter_ dizininde _Mike@Mike.com_ dosyasının olduğunu da görebiliyoruz. Burdan diyebilir ki; Büyük ihtimalle siteni newsletter bölümüne kaydolan her kullanıcın da böyle bir dosyası vardır. 
+__Params__'a gelerek, _c:\inetpub\wwwroot\Book\NewsLetter\Mike@Mike.com\Web Hacking Review.txt_ parametresini not alalım. Bu _c:\inetpub\wwwroot\Book\NewsLetter\Mike_ yolu bize newsletter özelliğinin yerel dosya sisteminden çekildiği konusunda fikir vermekte. _Newsletter_ dizininde _Mike@Mike.com_ dosyasının olduğunu da görebiliyoruz. Burdan diyebiliriz ki; Büyük ihtimalle sitenin newsletter bölümüne kaydolan her kullanıcın da böyle bir dosyası vardır. 
 
 Bir diğer konu da, uygulamamızın asıl yolu tahmin edebileceğimiz gibi _c:\inetpub\wwwroot\bookservice_ değilde _c:\inetpub\wwwroot\Book_ olmasına dikkat etmemiz. Bunu da bir kenara not alalım ki, sonra lazım olur.
 
@@ -212,6 +212,7 @@ Yani, saldırıcı _file_ parametresi yerine uzaktaki _http://saldıran_ip/zarar
 [resim8]: ../resim/ataklar/web/8.png
 [resim9]: ../resim/ataklar/web/9.png
 [resim10]: ../resim/ataklar/web/10.png
+[resim11]: ../resim/ataklar/web/11.png
 [resim12]: ../resim/ataklar/web/12.png
 [resim13]: ../resim/ataklar/web/13.png
 [resim14]: ../resim/ataklar/web/14.png

@@ -9,10 +9,10 @@ Yapılacak işlemler:___
 - [x] [B] Kullanilibilecek kaynaklari organize etme
 - [x] [B] Konulari belirleme
 - [x] [B] Konulari paylasma
-- [ ] [B] Konulari arastirma
+- [x] [B] Konulari arastirma
 - [x] [C] Github yukleme
-- [ ] [C] Kali linux kurma
-- [ ] [A] Ornekleri cogaltma
+- [x] [C] Kali linux kurma
+- [x] [A] Ornekleri cogaltma
 - [ ] [C] Ornek kontrol, deneme
 - [ ] [A] Yazim hatalari duzeltme
 - [ ] [A] Github sayfasi duzenlemeleri
@@ -32,7 +32,7 @@ __KONULAR__
         - [x] Kali Linux ayarları
             - [x] Network Ayarları
             - [ ] Ek yazılım
-            - [ ] Hedef sanal makineler
+            - [ ] __Hedef sanal makineler__
     - [x] Temel Linux Bilgisi
         - [x] Terminal Nedir?
         - [x] Linux Komutları
@@ -47,21 +47,21 @@ __KONULAR__
         - [x] Bash programlama
         - [x] Python programlama
         - [x] C Programlarını Yazma ve Derleme
-    - [ ] Metasploit Framework kullanımı
+    - [ ] __Metasploit Framework kullanımı__
 
 - [ ] __Değerlendirmeler__
-    - [ ] Bilgi toplama
+    - [ ] __Bilgi toplama__
     - [ ] Güvenlik açıkları bulma
     - [ ] Trafik yakalama
 
 - [ ] __Saldırılar__
     - [ ] Exploitation
-    - [ ] Şifre saldırıları
+    - [ ] __Şifre saldırıları__
     - [ ] Client-side exploitation
     - [ ] SociaL engineering
     - [ ] Antiwirüs uygulamalarını atlatma
     - [ ] Post exploitation
-    - [ ] Web uygulamaları
+    - [x] Web uygulamaları
     - [ ] Kablosuz ağ saldırıları
 
 - [ ] __Mobil hackleme__

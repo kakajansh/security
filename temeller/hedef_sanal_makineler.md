@@ -22,7 +22,7 @@ Yapacağımız saldırı denemelerinde kullanmak amaçlı kendimize __Ubuntu__, 
 
 ![k1]
 
-Dosya indirme işlemi tamamlandıktan sonra, artık bir tıklama ile hem Windows hem Ubuntu sistemlerini çalıştırabiliriz. İsterseniz internetten iso dosyalarını indirerek, sıfır kurulum da yapılabilir, seçenek sizin.. Biz kolaya kaçıyoruz.. VMware çalıştırdığınızda son olarak karşınıza çıkacak ekran çıktısı aşağıde verilmiştir. Şimdi ise tek tük ayarlar kaldı onlarla devam edelim.
+Dosya indirme işlemi tamamlandıktan sonra, artık bir tıklama ile hem Windows hem Ubuntu sistemlerini çalıştırabiliriz. İsterseniz internetten iso dosyalarını indirerek, sıfır kurulum da yapılabilir, seçenek sizin.. Biz kolaya kaçıyoruz.. VMware çalıştırdığınızda son olarak karşınıza çıkacak ekran çıktısı aşağıda verilmiştir. Şimdi ise tek tük ayarlar kaldı onlarla devam edelim.
 
 ![k2]
 

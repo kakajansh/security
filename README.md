@@ -27,7 +27,7 @@
 
 * [__Saldırılar__](saldirilar/README.md)
     * Exploitation
-    * Şifre saldırıları
+    * Parola kırma saldırıları
     * Client-side exploitation
     * SociaL engineering
     * Antiwirüs uygulamalarını atlatma
