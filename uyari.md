@@ -50,7 +50,7 @@ __KONULAR__
     - [ ] __Metasploit Framework kullanımı__
 
 - [ ] __Değerlendirmeler__
-    - [ ] __Bilgi toplama__
+    - [x] Bilgi toplama
     - [ ] Güvenlik açıkları bulma
     - [ ] Trafik yakalama
 

@@ -227,4 +227,12 @@ Yani, saldırıcı _file_ parametresi yerine uzaktaki _http://saldıran_ip/zarar
 
 
 
+http://www.slideshare.net/bgasecurity/sql-ve-sql-injection?related=1
 
+http://www.slideshare.net/bgasecurity/web-uygulama-gvenliine-kartal-bak?related=1
+
+http://www.slideshare.net/msdundar/w3afyi-taniyalim-4335734
+
+http://www.slideshare.net/bgasecurity/w3af-ile-web-uygulama-gvenlik-testleri-ii
+
+http://www.slideshare.net/bgasecurity/web-uygulama-pentest-egitimi?related=1

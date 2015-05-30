@@ -1,0 +1,1 @@
+http://www.slideshare.net/bgasecurity/kablosuz-alar-ve-gvenlik-riskleri

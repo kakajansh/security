@@ -1,3 +1,37 @@
 ## Giris 
 
-Günümüzde bilgisayar sistemlerinin güvenliği arttırılmasına rağmen, bu sistemlerine yapılan saldırılar da artmaktadır. Bu sistemlerin sahip olduğu güvenlik yapısını aşmaya çalışan saldırılar ile alınan karşı tedbirlerin sayısının da yükseldiği ve farklılıklar gösterdiği tespit edilmiştir. Bu tür saldırılardan korunmak için; yapılan tüm saldırıların takip edilmesi, gelişiminin izlenmesi, bilgisayar güvenliğinin yeterli ve etkin bir seviyede oluşturulmasında önemli bir gereksinimdir. Bu makalede; bilgisayar sistemlerine yapılan saldırılar incelenmiş; saldırı-saldırgan ilişkisi değerlendirilmiş; saldırıların ortak olarak sahip olduğu karakteristikler sunulmuş; yapılan saldırıların gelişimi irdelenmiş ve temel saldırı türleri gözden geçirilmiştir. Sonuçta; bilgisayar sistemlerine yapılan saldırılarda, kullanılan yöntemler ve metodolojiler iyi bilinmesinin, saldırganların hedefi olan sistemlerin güvenliği sıkılaştırılmasının, saldırı karakteristikleri izlenmesinin, saldırılarda hedef alınan korunmasızlıklar ile zayıflıkların giderilmesinin ve alınacak tedbirlerde saldırgan profillerinin de mutlaka dikkate alınmasının faydalı olacağı değerlendirilmektedir. Bunun yanında; bilgisayar sistemleri güvenliği, doğru ve etkili bir şekilde sağlanmak korumak için alınacak tedbirlerde güvenlik yaşam döngüsü mutlaka uygulanmalı ve bu çerçevede karşılaşılacak zayıflıklar ve eksiklikler giderilmelidir.
+Günümüz dünyasında her geçen gün bireyler, şirketler, kurumlar ve devletler için __"bilgi = daha çok güç"__ haline geldiği gibi, bilgi teknolojileri geliştikçe güvenlik sorunları da artmaktadır. Sistemimizin güvenliğini sağlayabilmek için zamanla saldırganın gözüyle bakmamız da faydalı olacaktır. Bu sebeple, birileri sisteminize saldırmadan kendize bir saldırı düzenleyebilmeniz için, saldırı yöntemleri hakkında genel bir bilgi vermek için, gerekirse saldırganın araç-gereçleri ile sizleri tanıştırma amaçlı kaleme alınmıştır. Çalışmamızın faydalı olacağını ümit ediyoruz..
+
+* __Amaç__
+
+> Bilgisayar güvenliği konusunda türkçe kaynak neredeyse yok denebilecek kadar azdır. Google'ın herşeyi bildiğine dair ne kadar inancımız olsa da, bu konuda sağlam bir bilgi sahibi olmak oldukça zordur. Araştırma yaptıysanız göreceksiniz ki _herşey hakkında hiçbir şey_ bilgi denizine dalacaksınız. Bilgilerin çoğu ya eski ya da yeterli uygulama örnekleri bulunmadığından takip edilmesi zordur. Yaptığımız çalışmanın her örneği şahsımız tarafından denenmiş, ve sizin de kolayca takip edebilmeniz için adım adım anlatımı resimlerle gösterilmiştir.
+
+* __Çalışmanızın kaynağı nedir?__
+
+> Çalışmamızın ana kaynağı __Georgia Weidman__ tarafından __2014__ senesinde yazılmış __PENETRATION TESTING__ kitabıdır. Yanı sıra türkçe kaynaklarından da faydalanarak ekleme çıkarma yapılmıştır. Ayrıca konuların son kısmında bulunan __DAHA FAZLASI__ bölümünde o konu için kendizi ilerletebileceğiniz bir kaynak listesi oluşturulmuştur.
+
+* __Beklentilerim ne olmalı?__
+
+> Linux, terminal, bash, python, sql injections, xss, exploit, payload, metasploit vb terimleri duymuşsanız, ama bir türlü bir araştırma yapmak için zaman ve mekan musait olmadığından öğrenememişseniz; iyi bir başlangıç noktası olabilir.
+
+* __Beklentilerim ne olmamalı?__
+
+> Dikkat ettiyseniz çalışmamız, bir kuruma zarar verme, şifre kırma, hesap çalma için amaçlanmamıştır. Kurduğumuz sistemde saldırgana karşı alacağımız önlemleri öğrenmek amaçlıdır.
+
+* __Hata buldum, ne yapmalıyım?__
+
+> Yazı, dilbigisi hataları, anlatım bozuklukları, tekniki hatalar olabilir. Github'a giriş yaparak Issues bölümünden bildirebilirsiniz. Bir yabancı olarak Türkçe yazdığımızdan normaldir :) 
+
+* __Yaptığın çalışmayı tebrik etmek isterim__
+
+> Yukarıda bir STAR tıklayarak memnuniyetinizi bildirebilirsiniz.
+
+* __Niye PDF veya Word dosyası değilde Github?__
+
+> Aslında, şahsen Github'y ilk kez bu şekil büyük çaplı bir çalışmada kullanıyorum. O yüzden ilk başta Markdown öğrenme, dosya düzenlemeleri baya bir karmaşık gelmişti. Ama Markdown yazı stiline alışınca, diğerlerine göre daha hızlı bir sonuç elde edilebilmektedir. Eminim siz de bu tercihi yaptığıma memnun kalacaksınız :) 
+Fark olarak başlıca şunlar:
+    * Kod kısmı için daha güzel görünüm
+    * Kolayca kod kısımlarından kopyala yapıştır yapılabilmesi
+    * PDF, HTML, vb formatlarına çevirebilme
+    * Güncellemesi kolay, ve aynı anda herkese erişilebilir
+    * Mac kullanıcısı olarak extradan bir Word kurma derdi yok

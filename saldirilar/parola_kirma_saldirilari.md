@@ -177,3 +177,4 @@ Bu saldırı türünde de brute-force, dictionary ve rainbow tabloları olmak 
 
 
 
+http://www.slideshare.net/bgasecurity/szma-testlerinde-parola-krma-saldrlar

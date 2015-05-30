@@ -6,8 +6,7 @@
 
 ### Hakkında
 
-**Networks and security** çok geniş çaplı bir konu alanı olduğundan, konularımız genelde neyi nasıl yapacağın şekilinde değilde, bir şey yapmak için izleyeceğiniz yollar ne olmalı onu bilgilendirme amaçlı kaleme alınmıştır.
-
+Günümüz dünyasında her geçen gün bireyler, şirketler, kurumlar ve devletler için __"bilgi = daha çok güç"__ haline geldiği gibi, bilgi teknolojileri geliştikçe güvenlik sorunları da artmaktadır. Sistemimizin güvenliğini sağlayabilmek için zamanla saldırganın gözüyle bakmamız da faydalı olacaktır. Bu sebeple, birileri sisteminize saldırmadan kendize bir saldırı düzenleyebilmeniz için, saldırı yöntemleri hakkında genel bir bilgi vermek için, gerekirse saldırganın araç-gereçleri ile sizleri tanıştırma amaçlı kaleme alınmıştır. Çalışmamızın faydalı olacağını ümit ediyoruz..
 
 ### Icerik
 

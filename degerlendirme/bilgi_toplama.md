@@ -233,8 +233,8 @@ Google Mail sunucularına sızmaya çalışmak pentest denemelerinin dışında 
 [maltego4]: ../resim/bilgi/maltego4.png
 [maltego5]: ../resim/bilgi/maltego5.png
 
-##### Port Arama
+##### DAHA FAZLASI İÇİN:
 
-(TODO)
+* [Nmap Kullanım Kitapçığı](http://www.slideshare.net/bgasecurity/nmap-kullanm-kitap-27487242)
 
-http://www.slideshare.net/bgasecurity/gvenlik-testlerinde-bilgi-toplama
+* [Güvenlik Testlerinde Bilgi Toplama](http://www.slideshare.net/bgasecurity/gvenlik-testlerinde-bilgi-toplama)
