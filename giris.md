@@ -12,7 +12,7 @@ Günümüz dünyasında her geçen gün bireyler, şirketler, kurumlar ve devlet
 
 * __Beklentilerim ne olmalı?__
 
-> Linux, terminal, bash, python, sql injections, xss, exploit, payload, metasploit vb terimleri duymuşsanız, ama bir türlü bir araştırma yapmak için zaman ve mekan musait olmadığından öğrenememişseniz; iyi bir başlangıç noktası olabilir.
+> _Linux, terminal, bash, python, sql injections, xss, exploit, payload, metasploit_ vb terimleri duymuşsanız, ama bir türlü bir araştırma yapmak için zaman ve mekan musait olmadığından öğrenememişseniz; iyi bir başlangıç noktası olabilir.
 
 * __Beklentilerim ne olmamalı?__
 
@@ -20,18 +20,18 @@ Günümüz dünyasında her geçen gün bireyler, şirketler, kurumlar ve devlet
 
 * __Hata buldum, ne yapmalıyım?__
 
-> Yazı, dilbigisi hataları, anlatım bozuklukları, tekniki hatalar olabilir. Github'a giriş yaparak Issues bölümünden bildirebilirsiniz. Bir yabancı olarak Türkçe yazdığımızdan normaldir :) 
+> Yazı, dilbigisi hataları, anlatım bozuklukları, tekniki hatalar olabilir. Github'a giriş yaparak __Issues__ bölümünden bildirebilirsiniz. Bir yabancı olarak Türkçe yazdığımızdan normaldir :) 
 
 * __Yaptığın çalışmayı tebrik etmek isterim__
 
-> Yukarıda bir STAR tıklayarak memnuniyetinizi bildirebilirsiniz.
+> Yukarıda bir __STAR__ :star: tıklayarak memnuniyetinizi bildirebilirsiniz.
 
 * __Niye PDF veya Word dosyası değilde Github?__
 
 > Aslında, şahsen Github'y ilk kez bu şekil büyük çaplı bir çalışmada kullanıyorum. O yüzden ilk başta Markdown öğrenme, dosya düzenlemeleri baya bir karmaşık gelmişti. Ama Markdown yazı stiline alışınca, diğerlerine göre daha hızlı bir sonuç elde edilebilmektedir. Eminim siz de bu tercihi yaptığıma memnun kalacaksınız :) 
 Fark olarak başlıca şunlar:
-    * Kod kısmı için daha güzel görünüm
-    * Kolayca kod kısımlarından kopyala yapıştır yapılabilmesi
-    * PDF, HTML, vb formatlarına çevirebilme
-    * Güncellemesi kolay, ve aynı anda herkese erişilebilir
-    * Mac kullanıcısı olarak extradan bir Word kurma derdi yok
+* Kod kısmı için daha güzel görünüm
+* Kolayca kod kısımlarından kopyala yapıştır yapılabilmesi
+* PDF, HTML, vb formatlarına çevirebilme
+* Güncellemesi kolay, ve aynı anda herkese erişilebilir
+* Mac kullanıcısı olarak extradan bir Word kurma derdi yok
