@@ -10,7 +10,7 @@ Günümüz dünyasında her geçen gün bireyler, şirketler, kurumlar ve devlet
 
 > Çalışmamızın ana kaynağı __Georgia Weidman__ tarafından __2014__ senesinde yazılmış __PENETRATION TESTING__ kitabıdır. Yanı sıra türkçe kaynaklarından da faydalanarak ekleme çıkarma yapılmıştır. Ayrıca konuların son kısmında bulunan __DAHA FAZLASI__ bölümünde o konu için kendizi ilerletebileceğiniz bir kaynak listesi oluşturulmuştur.
 
-___ 
+__ 
 
 ##### __Beklentilerim ne olmalı?__
 
@@ -20,7 +20,7 @@ ___
 
 > Dikkat ettiyseniz çalışmamız, bir kuruma zarar verme, şifre kırma, hesap çalma için amaçlanmamıştır. Kurduğumuz sistemde saldırgana karşı alacağımız önlemleri öğrenmek amaçlıdır.
 
-___
+__
 
 ##### __Hata buldum, ne yapmalıyım?__
 
