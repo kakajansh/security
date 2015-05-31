@@ -37,18 +37,9 @@ Günümüz dünyasında her geçen gün bireyler, şirketler, kurumlar ve devlet
 * __Mobil hackleme__
     * Using the smartphone pentest framework
 
-### XXXXX
-
-* [Ağ temelleri][4]
-    * [TCP/IP Yapısı][5]
-    * [IP Adresleme]
-    * [Network Cihazları]
-    * [Servisler]
-* ~~[Araştırılacak kaynak listesi][6]~~
-* [Tavsiye edilen kaynak listesi][7]
-
 #### Extra
 
+* [Kaynak Listesi][7]
 * [Hacker Terimleri][8]
 * [Malware nedir][9]
 
