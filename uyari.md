@@ -71,12 +71,15 @@ __KONULAR__
 
 - [ ] __Saldırılar__
     - [ ] Exploitation
-    - [ ] __Şifre saldırıları__
+    - [ ] __Parola kırma saldırıları__
+        - [x] Çevrimiçi Parola Atakları
+            - [x] Hydra Kullanımı
+        - [ ] Çevrimdışı Saldırılar
     - [ ] Client-side exploitation
     - [ ] SociaL engineering
     - [ ] Antiwirüs uygulamalarını atlatma
     - [ ] Post exploitation
-    - [ ] Web uygulamaları
+    - [ ] __Web uygulamaları__
         - [x] Burp Proxy kullanımı
         - [x] SQL Injection
         - [x] SQLMap kullanımı 
