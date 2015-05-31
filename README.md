@@ -44,7 +44,7 @@ Günümüz dünyasında her geçen gün bireyler, şirketler, kurumlar ve devlet
     * [IP Adresleme]
     * [Network Cihazları]
     * [Servisler]
-* [Araştırılacak kaynak listesi][6]
+* ~~[Araştırılacak kaynak listesi][6]~~
 * [Tavsiye edilen kaynak listesi][7]
 
 #### Extra
