@@ -31,7 +31,7 @@ __KONULAR__
             - [x] VirtualBox Guest Additions
         - [x] Kali Linux ayarları
             - [x] Network Ayarları
-            - [ ] Ek yazılım
+            - [x] Ek yazılım
             - [ ] __Hedef sanal makineler__
     - [x] Temel Linux Bilgisi
         - [x] Terminal Nedir?
