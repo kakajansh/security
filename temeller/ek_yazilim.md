@@ -23,40 +23,40 @@ Kali Linux denemelerimiz için lazım olan nerdeyse tüm araç-gereçleri içers
 4. Linux terminal'ini açalım. `ls` yazdığımızda, yeni indirdiğimiz dosyayı görmemiz lazım.
 
 5. `dpkg -i [indirdiğimiz_dosya_ismi]` yazarak __Enter__ basalım. Dosyanın ilk harfini yazarak, TAB tuşuna bastığmızda kendisi zaten bulacaktır. Karşılaşacağımız ekran:  
-```ShellSession
-Selecting previously unselected package nessus.
-(Reading database ... 355024 files and directories currently installed.)
-Unpacking nessus (from Nessus-5.2.5-debian6_amd64.deb) ...
-Setting up nessus (5.2.5) ...
-nessusd (Nessus) 5.2.5 [build N25109] for Linux
-Copyright (C) 1998 - 2014 Tenable Network Security, Inc
+    ```ShellSession
+    Selecting previously unselected package nessus.
+    (Reading database ... 355024 files and directories currently installed.)
+    Unpacking nessus (from Nessus-5.2.5-debian6_amd64.deb) ...
+    Setting up nessus (5.2.5) ...
+    nessusd (Nessus) 5.2.5 [build N25109] for Linux
+    Copyright (C) 1998 - 2014 Tenable Network Security, Inc
 
-Processing the Nessus plugins...
-[###########    
-```
+    Processing the Nessus plugins...
+    [###########    
+    ```
 
 6. Nessus kurulumu hatasız tamamlandığı zaman, aşağıdaki mesajı alacaksınız:  
-```ShellSession
-All plugins loaded
-Fetching the newest plugins from nessus.org...
-Fetching the newest updates from nessus.org...
-Done. The Nessus server will start processing these plugins within a
-minute
-nessusd (Nessus) 5.2.5 [build N25109] for Linux
-Copyright (C) 1998 - 2014 Tenable Network Security, Inc
+    ```ShellSession
+    All plugins loaded
+    Fetching the newest plugins from nessus.org...
+    Fetching the newest updates from nessus.org...
+    Done. The Nessus server will start processing these plugins within a
+    minute
+    nessusd (Nessus) 5.2.5 [build N25109] for Linux
+    Copyright (C) 1998 - 2014 Tenable Network Security, Inc
 
-Processing the Nessus plugins...
-[##################################################]
+    Processing the Nessus plugins...
+    [##################################################]
 
-All plugins loaded
-- You can start nessusd by typing /etc/init.d/nessusd start
-- Then go to https://kali:8834/ to configure your scanner
-```
+    All plugins loaded
+    - You can start nessusd by typing /etc/init.d/nessusd start
+    - Then go to https://kali:8834/ to configure your scanner
+    ```
 
 7. Nessus'u başlatmak için:  
-```ShellSession
-root@kali:~# /etc/init.d/nessusd start
-```
+    ```ShellSession
+    root@kali:~# /etc/init.d/nessusd start
+    ```
 
 8. Iceweasel tarayıcısını açalım ve https://kali:8834/ adresine gidelim. _SSL certificate_ uyarısını alacaksınız:  
 ![nessus1](../resim/kurulum/nessus1.png)
