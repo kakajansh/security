@@ -22,8 +22,7 @@ Kali Linux denemelerimiz için lazım olan nerdeyse tüm araç-gereçleri içers
 
 4. Linux terminal'ini açalım. `ls` yazdığımızda, yeni indirdiğimiz dosyayı görmemiz lazım.
 
-5. `dpkg -i [indirdiğimiz_dosya_ismi]` yazarak __Enter__ basalım. Dosyanın ilk harfini yazarak, TAB tuşuna bastığmızda kendisi zaten bulacaktır. Karşılaşacağımız ekran:
-
+5. `dpkg -i [indirdiğimiz_dosya_ismi]` yazarak __Enter__ basalım. Dosyanın ilk harfini yazarak, TAB tuşuna bastığmızda kendisi zaten bulacaktır. Karşılaşacağımız ekran:  
 ```ShellSession
 Selecting previously unselected package nessus.
 (Reading database ... 355024 files and directories currently installed.)
@@ -36,8 +35,7 @@ Processing the Nessus plugins...
 [###########    
 ```
 
-6. Nessus kurulumu hatasız tamamlandığı zaman, aşağıdaki mesajı alacaksınız:
-
+6. Nessus kurulumu hatasız tamamlandığı zaman, aşağıdaki mesajı alacaksınız:  
 ```ShellSession
 All plugins loaded
 Fetching the newest plugins from nessus.org...
@@ -55,18 +53,15 @@ All plugins loaded
 - Then go to https://kali:8834/ to configure your scanner
 ```
 
-7. Nessus'u başlatmak için
-
+7. Nessus'u başlatmak için:  
 ```ShellSession
 root@kali:~# /etc/init.d/nessusd start
 ```
 
-8. Iceweasel tarayıcısını açalım ve https://kali:8834/ adresine gidelim. _SSL certificate_ uyarısını alacaksınız:
-
+8. Iceweasel tarayıcısını açalım ve https://kali:8834/ adresine gidelim. _SSL certificate_ uyarısını alacaksınız:  
 ![nessus1](../resim/kurulum/nessus1.png)
 
-9. __I Understand the Risks__ ve sonrasında __Add Exception__ basalım, sonra ise __Confirm Security Exception__
-
+9. __I Understand the Risks__ ve sonrasında __Add Exception__ basalım, sonra ise __Confirm Security Exception__  
 ![nessus2](../resim/kurulum/nessus2.png)
 
 10. Nessus sayfası açılınca __Continue__ basalım, sonra __Initial Account Setup__ gelecektir karşımıza, kullanıcı adı ve şifremizi girerek devam edelim. 
