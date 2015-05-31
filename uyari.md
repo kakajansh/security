@@ -13,7 +13,7 @@ Yapılacak işlemler:___
 - [x] [C] Github yukleme
 - [x] [C] Kali linux kurma
 - [x] [A] Ornekleri cogaltma
-- [ ] [C] Ornek kontrol, deneme
+- [ ] [C] __Ornek kontrol, deneme__
 - [ ] [A] Yazim hatalari duzeltme
 - [ ] [A] Github sayfasi duzenlemeleri
 - [ ] [B] Teslim etme
