@@ -48,9 +48,24 @@ __KONULAR__
         - [x] Python programlama
         - [x] C Programlarını Yazma ve Derleme
     - [ ] __Metasploit Framework kullanımı__
+        - [x] Msfconsole
+        - [x] Metasploit Modüllerini bulma
+        - [x] Payloads
+        - [x] Msfcli
+        - [ ] Auxiliary
+        - [ ] Msfgui
 
 - [ ] __Değerlendirmeler__
     - [x] Bilgi toplama
+        - [x] Netcraft
+        - [x] Whois Arama
+        - [x] Web Sayfalarının Geçmişini İzleme
+        - [x] DNS Keşfi
+        - [x] Nslookup
+        - [x] Host
+        - [x] Bölge Aktarımı
+        - [x] Email Adres Arama
+        - [x] Maltego
     - [ ] Güvenlik açıkları bulma
     - [ ] Trafik yakalama
 
@@ -61,7 +76,14 @@ __KONULAR__
     - [ ] SociaL engineering
     - [ ] Antiwirüs uygulamalarını atlatma
     - [ ] Post exploitation
-    - [x] Web uygulamaları
+    - [ ] Web uygulamaları
+        - [x] Burp Proxy kullanımı
+        - [x] SQL Injection
+        - [x] SQLMap kullanımı 
+        - [x] XPath Enjeksiyonu
+        - [x] Yerel Dosya İçerme
+        - [x] Uzaktaki Dosyayı İçerme
+        - [ ] Cross-Site Scripting
     - [ ] Kablosuz ağ saldırıları
 
 - [ ] __Mobil hackleme__

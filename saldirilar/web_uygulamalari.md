@@ -110,7 +110,7 @@ Bu sorgu _Conversion failed when converting the nvarcar value 'BookApp' to data 
 
 ![resim10]
 
-##### SQLMap kullanımı
+#### SQLMap kullanımı
 
 Ayrıca biz, bir site üzerinde çeşitli görevleri yerine yetirme için SQL injection kullanarak SQL sorgularını otomatik oluşturan araçları da kullanabiliriz. Gereken tek şey enjeksyon noktası; geri kalanını aracımız yapacaktır. Mesela aşağıda, Kalinin aracı olan SQLMap'a enjekte olabilecek linki nasıl verileceğini göstermekte, SQLMap bizim için güvenlik açığı olabilecek SQL sorgularını test eder ve enjeksyon sorgularını çalıştırır.
 
@@ -142,7 +142,7 @@ os-shell> whoami
 do you want to retrieve the command standard output? [Y/n/a] Y command standard output: 'nt authority\system'
 ```
 
-##### XPath Enjeksiyonu
+#### XPath Enjeksiyonu
 
 Bizim üstünde deneme yaptığımız bookservice uygulaması kullanıcı kimlik doğrulaması için veritabanı yerine Xpath (XML sorgulama dili) kullanmaktadır. SQL sentaks değişse bile, enjeksyon prosesi hemen hemen aynıdır.
 
@@ -158,7 +158,7 @@ Yaptığımız bu sorgu Xpath'a kullanıcı adı ve şifresi boş veya 1=1 olan 
 
 ![resim13]
 
-##### Yerel Dosya İçerme
+#### Yerel Dosya İçerme
 
 Web uygulamalarında bulunan diğer bir önemli açıklardan biri de _yerel dosya içerme (local file inclusion)_. Web uygulamasında normalde erişime izinli olmamız gereken dosyaları okuyabilmek. 
 
