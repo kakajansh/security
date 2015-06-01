@@ -1,7 +1,10 @@
 ## **Uyari**
 
-___Günlük güncelleştirilmekle beraber, yapım aşamasındadır..
-Yapılacak işlemler:___
+___Günlük güncelleştirilmekle beraber, yapım aşamasındadır..___
+
+__BOLD yazı__ ve [ ] gördüğünüz yerler aktiv çalışması sürdürülmekte olan bölümlerdir.
+
+___Yapılacak işlemler:___
 
 - [x] [C] Markdown öğrenme
 - [x] [C] Mac uyumlu makdown editor

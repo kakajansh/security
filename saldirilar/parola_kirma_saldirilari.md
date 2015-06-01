@@ -53,7 +53,7 @@ __Encoding/Kodlama:__ Verinin farklı sistem ve ortamlarda dolaşabilmesi için 
 
 #### Çevrimiçi Parola Atakları
 
-Güvenlik açıklarında kullandığımız otomatik taramalarına benzer taktikle parola öğrenme için bulunan scriptler de mevcuttur. Biz bunun için sunucudan başarılı giriş mesajını alana kadar otomatik çevrimiçi parola tarayıcılarını veya parola XXX guess kullanıyoruz. Teknik olarak bu metodlar __brute force__ olarak adlandırılmaktadır. Bu metodu kullanan araçlar kullanıcı adı ve parola XXX combination olasalığını verdiğimiz vakit süresince denemektedir.
+Güvenlik açıklarında kullandığımız otomatik taramalarına benzer taktikle parola öğrenme için bulunan scriptler de mevcuttur. Biz bunun için sunucudan başarılı giriş mesajını alana kadar otomatik çevrimiçi parola tarayıcılarını veya parola tahmin edici araçları kullanıyoruz. Teknik olarak bu metodlar __brute force__ olarak adlandırılmaktadır. Bu metodu kullanan araçlar kullanıcı adı ve parola kombinasyonunun doğru olma olasalığını, verdiğimiz vakit süresince denemektedir.
 
 Brute force metodu ile parola kırılması parolanın zorluğuna göre saatlerce hat da aylar, yıllar sürebilmektedir. Çoğunlukla biz sıfırdan her olasılığı deneme yerine, parolanın içerebileceği kelimeleri bu araçlara belirleyebiliriz. Mesela, bir _xxx kafenin_ internet sitesinin yönetici parolasını öğrenmek istiyorsanız, _kafenin adı_, _kafe_, _yöneticisi_, _adresi_, _çeşitli tarihler_ vs bilgilerin girilmesi brute force metodu ile daha iyi sonuçlar alınabilmektedir.
 
@@ -83,8 +83,8 @@ password123
 ```
 
  Biz şimdi genel mantığı anlatma amaçlı böyle basit bir bilgiler giriyoruz, ama gerçekte biraz ciddi ciddi araştırma yapılması gerekir. İnternette de bu türlü listeler bulunabilir: 
-    * http://packetstormsecurity.com/Crackers/wordlists/
-    * http://www.openwall.com/wordlists/
+* http://packetstormsecurity.com/Crackers/wordlists/
+* http://www.openwall.com/wordlists/
 
 Hatda Kali'nin kendisinde de `/usr/share/wordlists` dizininde `rockyou.txt.gz` adlı dosyada parola sözlüğü bulunmaktadır. _gz_ arşiv dosyasıdır, açıldığında 140 MB lık bir parola sözlüğü başlangıç için çok işimize gelecektir. Ama tabii unutulmamalıdır ki, daha iyi sonuçlar için hedefimizdeki kişinin bilgileri daha çok iyi sonuçlar almamıza vesile olacaktır.
 
