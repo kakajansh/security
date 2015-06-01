@@ -2,7 +2,7 @@
 
 ___Günlük güncelleştirilmekle beraber, yapım aşamasındadır..___
 
-__BOLD yazı__ ve [ ] gördüğünüz yerler aktiv çalışması sürdürülmekte olan bölümlerdir.
+- [ ] boş kutu ve __kalın harfli yazı__ olan yerler aktiv çalışması sürdürülmekte olan bölümlerdir.
 
 ___Yapılacak işlemler:___
 
