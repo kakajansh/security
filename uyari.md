@@ -66,11 +66,12 @@ __KONULAR__
         - [x] Bölge Aktarımı
         - [x] Email Adres Arama
         - [x] Maltego
-    - [ ] Güvenlik açıkları bulma
+    - [ ] __Güvenlik açıkları bulma__
+        - [x] Nessus
     - [ ] Trafik yakalama
 
 - [ ] __Saldırılar__
-    - [ ] Exploitation
+    - [ ] __Exploitation__
     - [ ] __Parola kırma saldırıları__
         - [x] Çevrimiçi Parola Atakları
             - [x] Hydra Kullanımı

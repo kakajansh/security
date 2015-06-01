@@ -166,10 +166,10 @@ Unutmamız gereken şey, bazı sistemler, mesela _google mail_ belli bir hatalı
 
 ##### Çevrimdışı Saldırılar
 
-Bu saldırıda kullanıcı adları ve parolaların sistemde kayıtlı tutulduğu noktalara erişim sağlanmaya çalışılır. Kullanıcı adları ve parolalar text olarak tutulmuş veya şifrelenmiş(encrypted) ve özetlenmiş(hashing) şekilde tutuluyor olabilir.
+Bu saldırıda kullanıcı adları ve parolaların sistemde kayıtlı tutulduğu noktalara erişim sağlanmaya çalışılır. Kullanıcı adları ve parolalar text olarak tutulmuş veya şifrelenmiş(encrypted) ve özetlenmiş(hashing) şekilde tutuluyor olabilir.
 
-Yetkilendirme yapılırken parolanın özet değeri alınarak kullanıcının girdiği ve sistemde daha önce kaydedilen parolanın özeti karşılaştırılır . Buna göre kullanıcıya yetki verilir. Özet işlemi için MD5, SHA, NTLM gibi metotlar vardır.
-Bu saldırı türünde de brute-force, dictionary ve rainbow tabloları olmak üzere 3 farklı metot söylenebilir.
+Yetkilendirme yapılırken parolanın özet değeri alınarak kullanıcının girdiği ve sistemde daha önce kaydedilen parolanın özeti karşılaştırılır . Buna göre kullanıcıya yetki verilir. özet işlemi için MD5, SHA, NTLM gibi metotlar vardır.
+Bu saldırı türünde de brute-force, dictionary ve rainbow tabloları olmak üzere 3 farklı metot söylenebilir.
 
 
 

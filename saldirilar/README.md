@@ -1,11 +1,10 @@
 ### SALDIRILAR
 
 * Exploitation
-* Şifre saldırıları
+* [Parola kırma saldırıları](parola_kirma_saldirilari.md)
 * Client-side exploitation
-* SociaL engineering
+* Social engineering
 * Antiwirüs uygulamalarını atlatma
 * Post exploitation
-* Web uygulamaları
-
-* Kablosuz ağ saldırıları
+* [Web uygulamaları](saldirilar/web_uygulamalari.md)
+* [Kablosuz ağ saldırıları](saldirilar/kablosuz_ag_saldirilari.md)
