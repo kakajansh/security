@@ -156,25 +156,30 @@ __OK__ basalım. Dosya paylaşım uyarısı aldığınızda, Windows'taki kullan
 
 ###### Adobe Acrobat Reader
 
+http://www.oldapps.com/adobe_reader.php?old_adobe=17/ adresinden Adobe Acrobat Reader 8.1.2 sürümünü indirelim. Bitiminde __Finish__ basalım ve kapatalım.
+
 ###### War-FTP
+
+http://www.exploit-db.com/exploits/3570/ adresinden War-FTP 1.65 sürümünü indirelim. İndirdiğimiz _exe_ dosyasını çalıştıralım ve kurulumunu yapalım. Şimdilik FTP servisini başlatmamıza gerek yok, ilerleyen konularda göreceğiz.
 
 ###### WinSCP
 
-###### Immunity Debugger ve Mona Kurulumu
+WinSCP programının son sürümünü http://winscp.net/ adresinden indirelim. Kurulum sırasında __Typical Installation__ seçelim. Diğer eklentiler (add-ons) için seçeneği kaldırabiliriz. Bitince __Finis__ basalım ve tamamlayalım.
 
 #### Windows 7
 
 Verdiğimiz linkten Windows 7 sistemini de indirdikten sonra, Windows XP olduğu gibi otomatik güncellemeyi kapatalım ve network ayarlarına giderek statik IP adresi belirleyelim. İndirdiğimiz Windows 7 sisteminin kullanıcı şifresi varsayılan olarak: __Passw0rd!__ Şimdi ise, denemelerimiz için lazım olacak bazı programların kurulumunu yapalım.
 
-* Java 7 Update 6 (Java'nın tarihi geçmiş versiyonu): http://www.oldapps.com/java.php?old_java=8120/
-* Winamp 5.55 versiyonu: http://www.oldapps.com/winamp.php?old_ winamp=247/
+* Java 7 Update 6 (Java'nın eski sürümü): http://www.oldapps.com/java.php?old_java=8120/
+
+* Winamp 5.55 versiyonu: http://www.oldapps.com/winamp.php?old_winamp=247/ (Arama motoruyla ilgili seçenekleri kaldıralım)
+
 * Mozilla Firefox'un son sürümünü: http://www.mozilla.org/
+
 * Microsoft Security Essentials: http://windows.microsoft.com/en-us/windows/security-essentials-download/ Kurulumunu yaptıktan sonra otomatik güncelleme önerisini ve korumasını şimdilik kapatıyoruz. __Real-time Protection > Turn on real-time protection (recommended) işaretini kaldır > Save changes__
+
 * Son olarak ta, yukarıda torrentle indirmiş olduğumuz __BookApp__ web uygulamasını kuralım. Sürükle & bırak yaparak sistemimizden Windows 7'ye atalım.  
     [KURULUMU](BookApp.md)
-
-
-TODO: windows7
 
 Tebrik ederim! Hedef sanal makinelerimizin kurulumunu tamamlamış bulunmaktayız. Yorucu bir gündü.. Birazda kafa dağıtmaya ne dersiniz? Ubuntu açalım, ordan __Games > Nibbles__ oyununu açalım.. öyle devam ederiz..
 
