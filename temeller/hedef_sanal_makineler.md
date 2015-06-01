@@ -129,9 +129,15 @@ Sonrasında 3Com TFTP programını başlatmak için __Start Service__ basalım. 
 
 1. Kurulum dosyasını çalıştıralım ve varsayılan değerler ile devam edelim. Kurulum tamamlandıktan sonra, ilk seçeneği __1. start XAMPP Control Panel,__ seçelim.
 
-2. XAMPP Control Panel'inde __install__ basarak _Apache, MySQL ve FileZilla_ servislerini kuralım (__Svc__ seçeneğini işaretli olarak) ve herbiri __Start__ basarak başlatalım. Son olarak ekran çıktısı:
+![xampp1](../resim/kurulum/xampp1.png)
+
+2. XAMPP Control Panel'inde _Apache, MySQL ve FileZilla_ servislerinin solunda bulunan __Svc__ seçeneğini işaretleyelim ve __OK__, sonra herbiri için __Start__ basarak başlatalım. Son olarak ekran çıktısı:
+
+![xampp2](../resim/kurulum/xampp2.png)
 
 3. XAMPP Control Panel'inde _FileZilla_ için __Admin__ butonunu basalım, _Admin paneli:_
+
+![xampp3](../resim/kurulum/xampp3.png)
 
 4. _Users_ penceresini açmak için __Edit > Users__ gidelim
 
@@ -139,9 +145,14 @@ Sonrasında 3Com TFTP programını başlatmak için __Start Service__ basalım. 
 
 6. _Add User Account_ penceresinde, __cansu__ girelim ve __OK__
 
+![xampp4](../resim/kurulum/xampp4.png)
+
 7. _cansu_ seçiliyken, _Account Settins_ altında bulunan __Password__ kutusunu işaretleyelim ve parola __password__ olarak girelim
 
-__OK__ basalım.
+__OK__ basalım. Dosya paylaşım uyarısı aldığınızda, Windows'taki kullanıcının _IEUser's Documents_ dosyasını seçelim. Diğer kutuları varsıyalan değerlerleri ile bırakıyoruz. Bitirince __OK__ basalım, ve diğer pencereleri de kapatalım.
+
+![xampp5](../resim/kurulum/xampp5.png)
+
 
 ###### Adobe Acrobat Reader
 
