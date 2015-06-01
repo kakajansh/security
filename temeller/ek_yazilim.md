@@ -17,7 +17,7 @@ Kali Linux denemelerimiz için lazım olan nerdeyse tüm araç-gereçleri içers
 
 2. Üye formunu dolduralım ve __Register__ yaparak üye olalım. Mail adresimize _Activation Code_ göndereceğinden gerçek mail girelim.
 
-3. İndirme sayfasına erişince Nessus'un Linux Debian 32 veya 64 bit platformu için son sürümünü `root` dizinimize indirelim. ()  
+3. İndirme sayfasına erişince Nessus'un Linux Debian 32 veya 64 bit platformu için son sürümünü `root` dizinimize indirelim. _(Nessus-6.3.7-debian6_amd64.deb)_
     32 bitm mi 64 bitmi? öğrenmek için __Applications > System Tools > System Monitor > System__
 
 4. Linux terminal'ini açalım. `ls` yazdığımızda, yeni indirdiğimiz dosyayı görmemiz lazım.
@@ -124,6 +124,40 @@ root@kali:~#
 ```
 
 #### Ettercap
+
+Arasında şahısın olduğu (man-in-the-middle) atak çeşidini gerçekleştirmek için kullanılan araçtır. İlk kez çalıştırmadan önce _/etc/ettercap/etter.conf_ dizininde bulunan ayar dosyasını ayarlamamız gerekiyor. Terminalde nano editörün yardımı ile açalım. 
+
+```ShellSession
+root@kali:~# nano /etc/ettercap/etter.conf
+```
+
+İlk Ettercap'ın _root_ yetkisi olmadan çalışabilmesi için önce _userid_ ve _groupid_ değerlerini __0__ olarak değiştirelim.
+
+```ShellSession
+[privs]
+ec_uid = 0      # nobody is the default 
+ec_gid = 0      # nobody is the default
+```
+
+Sonra, dosyada aşağı doğru Linux bölümüne gelene kadar kaydıralım. `redir_command_on` ve `redir_command_off` önünde bulunan `#` işaretini kaldıralım.
+
+```ShellSession
+#---------------
+#     Linux
+#---------------
+
+# if you use ipchains:
+   #redir_command_on = "ipchains -A input -i %iface -p tcp -s 0/0 -d 0/0 %port -j REDIRECT
+%rport"
+   #redir_command_off = "ipchains -D input -i %iface -p tcp -s 0/0 -d 0/0 %port -j REDIRECT
+%rport"
+
+# if you use iptables:
+    redir_command_on = "iptables -t nat -A PREROUTING -i %iface -p tcp --dport %port -j
+     REDIRECT --to-port %rport"
+    redir_command_off = "iptables -t nat -D PREROUTING -i %iface -p tcp --dport %port -j
+     REDIRECT    --to-port %rport"
+```
 
 
 

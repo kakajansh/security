@@ -28,13 +28,13 @@ Günümüz dünyasında her geçen gün bireyler, şirketler, kurumlar ve devlet
 
 * [__Saldırılar__](saldirilar/README.md)
     * Exploitation
-    * Parola kırma saldırıları
+    * [Parola kırma saldırıları](saldirilar/parola_kirma_saldirilari.md)
     * Client-side exploitation
     * SociaL engineering
     * Antiwirüs uygulamalarını atlatma
     * Post exploitation
     * [Web uygulamaları](saldirilar/web_uygulamalari.md)
-    * Kablosuz ağ saldırıları
+    * [Kablosuz ağ saldırıları](saldirilar/kablosuz_ag_saldirilari.md)
 
 * __Mobil hackleme__
     * Using the smartphone pentest framework
@@ -67,3 +67,5 @@ Sayawan © 2015
 [9]:    extra/malware.md
 
 [image-1]:	resim/anatomy.png
+
+![badge](resim/badge.jpg)

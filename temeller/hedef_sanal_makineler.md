@@ -88,7 +88,68 @@ Son olarakta, kurduğumuz Windows XP sistemini normal bir windows domain'in üye
 
 ![k8]
 
-TODO: Installing Vulnerable Software
+
+##### Savunmasız Yazılım Yükleme
+
+Saldırılarda kullnamak üzere birkaç tane savunmasız proğram yükleyeceğiz. İlerleyen konularda bu tür yazılımlara nasıl saldırı düzenleneceği hakkında detaylı göreceğiz. Windows XP sistemimize aşağıdakileri kuralım:
+
+###### Zervit 0.4
+
+http://www.exploit-db.com/exploits/12582/ adresinden Zervit 0.4 sürümünü indirelim. Seçeneklerden _Vulnerable App_ seçelim. İndirmiş olduğumuz zip dosyasını açalım ve _Zervit_ programını çalıştıralım. Program başladığında port numarası isteyecektir __3232__ girelim. Herhangi bir sebeple Windows yeniden başlattığınızda _Zervit_ servisi kendisi yeniden çalıştırmayacaktır, tekrar kendimiz çalıştırmamız gerekir.
+
+![zervit](../resim/kurulum/zervit.png)
+
+###### SLMail 5.5
+
+http://www.exploit-db.com/exploits/638/ adresinden SLMail 5.5 sürümünü indirelim ve çalıştıralım. Kurulum süresince hep varsayılan değerlerle __Next__ diye geçiyoruz, ancak _domain name_ hakkında uyarı aldığnızda onu da __OK__ basalım geçelim.
+
+SLMail kurulumu tamamlanınca, sanal makinemizi yeniden başlatalım. Sonra __Start > All Programs > SL Products > SLMail > SLMail Configuration__ giderek _Users_ sekmesinde resimdeki gibi __New > User__
+
+![smail1](../resim/kurulum/smail1.png)
+
+Yeni oluşturulan kullanıcı simgesinin üstüne basarak, __cansu__ olarak isim girelim. Sonrasında açılan pencerede:
+
+![smail2](../resim/kurulum/smail2.png)
+
+###### 3Com TFTP 2.0.1
+
+Sonra, http://www.exploit-db.com/exploits/3388/ adresinden 3Com TFTP 2.0.1 sürümünü indirelim. Zip dosyasından açalım ve _3CTftpSvcCtrl_ ve _3CTftpSvc_ dosyalarını _C:\Windows_ dizinine atalım
+
+![tftp1](../resim/kurulum/tftp1.png)
+
+_3CTftpSvcCtrl_ dosyasını açalım ve __Install Service__ basalım:
+
+![tftp2](../resim/kurulum/tftp2.png)
+
+Sonrasında 3Com TFTP programını başlatmak için __Start Service__ basalım. Bundan sonra Windows XP makinemizi yeniden başlatsak bile, kendisi otamatik olarak açılışta çalışacaktır, __Quit__ diyerek çıkalım.
+
+###### XAMPP 1.7.2
+
+Şimdi XAMPP proğramının eski sürümlerinden bir tanesini kuralım; Onun için http://www.oldapps.com/xampp.php?old_xampp=45/ adresine gidelim ve indirelim. İndirme yaparken herhangi bir sıkıntıyla karşılaşırsanız, normal bilgisayarınızda indirip sonra sanal makineye atabilirsiniz.
+
+1. Kurulum dosyasını çalıştıralım ve varsayılan değerler ile devam edelim. Kurulum tamamlandıktan sonra, ilk seçeneği __1. start XAMPP Control Panel,__ seçelim.
+
+2. XAMPP Control Panel'inde __install__ basarak _Apache, MySQL ve FileZilla_ servislerini kuralım (__Svc__ seçeneğini işaretli olarak) ve herbiri __Start__ basarak başlatalım. Son olarak ekran çıktısı:
+
+3. XAMPP Control Panel'inde _FileZilla_ için __Admin__ butonunu basalım, _Admin paneli:_
+
+4. _Users_ penceresini açmak için __Edit > Users__ gidelim
+
+5. Pencerenin sağ kısmında __Add__ basalım
+
+6. _Add User Account_ penceresinde, __cansu__ girelim ve __OK__
+
+7. _cansu_ seçiliyken, _Account Settins_ altında bulunan __Password__ kutusunu işaretleyelim ve parola __password__ olarak girelim
+
+__OK__ basalım.
+
+###### Adobe Acrobat Reader
+
+###### War-FTP
+
+###### WinSCP
+
+###### Immunity Debugger ve Mona Kurulumu
 
 #### Windows 7
 
