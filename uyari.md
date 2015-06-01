@@ -23,8 +23,8 @@ ___Yapılacak işlemler:___
 
 __KONULAR__
 
-- [ ] Giriş
-- [ ] Genel bilgi
+- [x] Giriş
+- [x] Genel bilgi
 - [x] __Temeller__
     - [x] Sanal Lab ayarları
         - [x] Kali Linux nedir
