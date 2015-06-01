@@ -25,7 +25,7 @@ __KONULAR__
 
 - [ ] Giriş
 - [ ] Genel bilgi
-- [ ] __Temeller__
+- [x] __Temeller__
     - [x] Sanal Lab ayarları
         - [x] Kali Linux nedir
         - [x] VMware Kurulumu
@@ -35,7 +35,7 @@ __KONULAR__
         - [x] Kali Linux ayarları
             - [x] Network Ayarları
             - [x] Ek yazılım
-            - [ ] __Hedef sanal makineler__
+            - [x] Hedef sanal makineler
     - [x] Temel Linux Bilgisi
         - [x] Terminal Nedir?
         - [x] Linux Komutları
