@@ -14,7 +14,7 @@ Herhangi bir bilgisayar sistemini ele geçirmek isteyen bir saldırganın yapaca
 * Email Adres Arama
 * Maltego
 
-### [Güvenlik açıkları bulma](guvenlik_aciklari_bulma.md)
+#### [Güvenlik açıkları bulma](guvenlik_aciklari_bulma.md)
 
 * Nessus
 

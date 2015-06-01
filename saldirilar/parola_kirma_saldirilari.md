@@ -24,6 +24,8 @@ __Güçlü Parola Oluşturmanın 2 Temel Esası:__ _Uzunluk_ ve _Karmaşıklık_
 
 [Kaynak](http://www.e-siber.com/guvenlik/guvenli-parola-olusturma-rehberi/)
 
+___
+
 ##### Parola mı şifre mi?
 
 Parola ve şifre sık sık birbiri yerine kullanılan ve karıştırılan iki farklı kavramdır.
