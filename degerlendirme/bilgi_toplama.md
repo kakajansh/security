@@ -76,7 +76,7 @@ Archive.org 1996’dan beri tüm interneti kayıt altına alan bir yapıdır. Bu
 
 Mesela _facebook.com_ sorguladığınızda bu domaine ait hangi devirlerde arşiv alınmış bilgisi ve bu dönemlere ait sitenin görünümünü elde edilebilir.
 
-[image](../resim/bilgi/archive.png)
+![image](../resim/bilgi/archive.png)
 
 
 ##### DNS Keşfi
@@ -84,7 +84,7 @@ Mesela _facebook.com_ sorguladığınızda bu domaine ait hangi devirlerde arşi
 DNS Protokolü internetin temel yapıtaşıdır. Genel olarak www hizmetlerinde ve e-posta servislerinde kritik rol oynar. Düzgün yapılandırılmamış bir DNS sunucu dışarıya oldukça fazla bilgi verebilir.
 
 __DNS sorgu tipleri__
-[image](../resim/bilgi/dns.png)
+![image](../resim/bilgi/dns.png)
 
 ###### Nslookup
 
