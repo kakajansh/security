@@ -258,16 +258,13 @@ Nmap kullanarak ağa bağlı herhangi bir bilgisayarın işletim sistemi, çalı
 ##### Nmap Tarama Çeşitleri
 
 1. TCP SYN Scan
-
 Kaynak bilgisayarın hedef bilgisayara TCP SYN bayraklı paket gönderilerek yapılan bir tarama şeklidir.Eğer taranan portlar kapalı ise hedef makinadan kaynak makinaya RST + ACK bayraklı paket döndürülür.
-
 Eğer taranan portlar açık ise SYN + ACK bayraklı paket döndürülür.
 Daha sonra kaynak bilgisayarda RST bayraklı paket göndererek bağlantı kopar.
-
-Bu taramayı kullanmak için;
-`nmap -sS 192.168.1.1` komutu yeterlidir. `-v` parametresini ekleyerek komut çıktısını daha düzenli hale getirebilirsiniz.
-
-![nmap1](../resim/bilgi/nmap1.jpg)
+Bu taramayı kullanmak için;  
+    `nmap -sS 192.168.1.1` komutu yeterlidir. 
+    `-v` parametresini ekleyerek komut çıktısını daha düzenli hale getirebilirsiniz.  
+    ![nmap1](../resim/bilgi/nmap1.jpg)
 
 2. TCP Connect Scan
 Tarama kapalı portlara yapıldığı zaman RST + ACK paketi döndürülür.
