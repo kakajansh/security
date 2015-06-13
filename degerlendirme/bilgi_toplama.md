@@ -270,31 +270,23 @@ Bu taramayı kullanmak için;
 ![nmap1](../resim/bilgi/nmap1.jpg)
 
 2. TCP Connect Scan
-
 Tarama kapalı portlara yapıldığı zaman RST + ACK paketi döndürülür.
-Tarama açık portlara yapıldığı zaman hedep bilgisayarın göndereceği SYN + ACK bayraklı paketi,kaynak bilgisayar ACK bayraklı paket göndererek cevaplar ve bağlantı sağlanır.
-
-Bu taramayı kullanmak için;
-`nmap -sT 192.168.1.1` komutu yeterlidir.
-
-![nmap2](../resim/bilgi/nmap2.gif)
+Tarama açık portlara yapıldığı zaman hedep bilgisayarın göndereceği SYN + ACK bayraklı paketi,kaynak bilgisayar ACK bayraklı paket göndererek cevaplar ve bağlantı sağlanır.  
+    Bu taramayı kullanmak için;  
+    `nmap -sT 192.168.1.1` komutu yeterlidir.  
+    ![nmap2](../resim/bilgi/nmap2.gif)
 
 3. FIN Scan
-
-Hedef makinaya TCP bağlantı isteği olmadan gönderilen paketle tarama yapılır.
-Eğer taranan portlar kapalı ise geriye RST + ACK paketi dönecektir.Eğer açık ise hedef bilgisayardan bir tepki gelmeyecektir.
-
-Bu taramayı kullanmak için;
-`nmap -sF 192.168.1.1` komutu yeterlidir.
-
-![nmap3](../resim/bilgi/nmap3.gif)
+Hedef makinaya TCP bağlantı isteği olmadan gönderilen paketle tarama yapılır. Eğer taranan portlar kapalı ise geriye RST + ACK paketi dönecektir. Eğer açık ise hedef bilgisayardan bir tepki gelmeyecektir.  
+    Bu taramayı kullanmak için;  
+    `nmap -sF 192.168.1.1` komutu yeterlidir.  
+    ![nmap3](../resim/bilgi/nmap3.gif)
 
 4. Xmas Tree Scan
-
-Kaynak bilgisayarın TCP paketine URG,PSH ve FIN bayraklı bir set halinde yapılan taramadır. Eğer taranan portlar kapalı ise geriye RST + ACK paketi dönecektir. Eğer taranan portlar açık ise hedef bilgisayardan tepki gelmeyecektir.
-
-Bu taramayı kullanmak için; `nmap –sX 192.168.1.1` komutu yeterli olacaktır. 
-
+Kaynak bilgisayarın TCP paketine URG,PSH ve FIN bayraklı bir set halinde yapılan taramadır. Eğer taranan portlar kapalı ise geriye RST + ACK paketi dönecektir. Eğer taranan portlar açık ise hedef bilgisayardan tepki gelmeyecektir.  
+    Bu taramayı kullanmak için;  
+    `nmap –sX 192.168.1.1` komutu yeterli olacaktır. 
+    
 Örnek Verdiğimiz komutların çıktıları bu şekilde olacaktır:
 
 ![nmap4](../resim/bilgi/nmap4.png)
