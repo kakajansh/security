@@ -233,7 +233,81 @@ Google Mail sunucularına sızmaya çalışmak pentest denemelerinin dışında 
 [maltego4]: ../resim/bilgi/maltego4.png
 [maltego5]: ../resim/bilgi/maltego5.png
 
+#### Nmap
+
+Nmap, bilgisayar ağları uzmanı Gordon Lyon (Fyodor) tarafından C/C++ ve Python programlama dilleri kullanılarak geliştirilmiş bir güvenlik tarayıcısıdır. Taranan ağın haritasını çıkarabilir ve ağ makinalarında çalışan servislerin durumlarını, işletim sistemlerini, portların durumlarını gözlemleyebilir.
+
+Nmap kullanarak ağa bağlı herhangi bir bilgisayarın işletim sistemi, çalışan fiziksel aygıt tipleri, çalışma süresi, yazılımların hangi servisleri kullandığı, yazılımların sürüm numaraları, bilgisayarın güvenlik duvarına sahip olup olmadığı, ağ kartının üreticisinin adı gibi bilgiler öğrenilebilmektedir.
+
+##### Nmap Komutları
+
+* nmap -sS 192.168.1.1 = TCP SYN Scan
+* nmap -sT 192.168.1.1 = TCP Connect Scan
+* nmap -sF 192.168.1.1 = FIN Scan
+* nmap -sX 192.168.1.1 = Xmas Tree Scan
+* nmap -sN 192.168.1.1 = Null Scan
+* nmap -sP 192.168.1.1 = Ping Scan
+* nmap -sV 192.168.1.1 = Version Detection
+* nmap -sU 192.168.1.1 = UDP Scan
+* nmap -sO 192.168.1.1 = IP Protocol Scan
+* nmap -sA 192.168.1.1 = ACK Scan
+* nmap -sW 192.168.1.1 = Window Scan
+* nmap -sR 192.168.1.1 = RPC Scan
+* nmap -sL 192.168.1.1 = List Scan
+
+##### Nmap Tarama Çeşitleri
+
+1. TCP SYN Scan
+
+Kaynak bilgisayarın hedef bilgisayara TCP SYN bayraklı paket gönderilerek yapılan bir tarama şeklidir.Eğer taranan portlar kapalı ise hedef makinadan kaynak makinaya RST + ACK bayraklı paket döndürülür.
+
+Eğer taranan portlar açık ise SYN + ACK bayraklı paket döndürülür.
+Daha sonra kaynak bilgisayarda RST bayraklı paket göndererek bağlantı kopar.
+
+Bu taramayı kullanmak için;
+`nmap -sS 192.168.1.1` komutu yeterlidir. `-v` parametresini ekleyerek komut çıktısını daha düzenli hale getirebilirsiniz.
+
+![nmap1](../resim/bilgi/nmap1.jpg)
+
+2. TCP Connect Scan
+
+Tarama kapalı portlara yapıldığı zaman RST + ACK paketi döndürülür.
+Tarama açık portlara yapıldığı zaman hedep bilgisayarın göndereceği SYN + ACK bayraklı paketi,kaynak bilgisayar ACK bayraklı paket göndererek cevaplar ve bağlantı sağlanır.
+
+Bu taramayı kullanmak için;
+`nmap -sT 192.168.1.1` komutu yeterlidir.
+
+![nmap2](../resim/bilgi/nmap2.gif)
+
+3. FIN Scan
+
+Hedef makinaya TCP bağlantı isteği olmadan gönderilen paketle tarama yapılır.
+Eğer taranan portlar kapalı ise geriye RST + ACK paketi dönecektir.Eğer açık ise hedef bilgisayardan bir tepki gelmeyecektir.
+
+Bu taramayı kullanmak için;
+`nmap -sF 192.168.1.1` komutu yeterlidir.
+
+![nmap3](../resim/bilgi/nmap3.gif)
+
+4. Xmas Tree Scan
+
+Kaynak bilgisayarın TCP paketine URG,PSH ve FIN bayraklı bir set halinde yapılan taramadır. Eğer taranan portlar kapalı ise geriye RST + ACK paketi dönecektir. Eğer taranan portlar açık ise hedef bilgisayardan tepki gelmeyecektir.
+
+Bu taramayı kullanmak için; `nmap –sX 192.168.1.1` komutu yeterli olacaktır. 
+
+Örnek Verdiğimiz komutların çıktıları bu şekilde olacaktır:
+
+![nmap4](../resim/bilgi/nmap4.png)
+
+[Kaynak](http://www.cyber-warrior.org/Forum/temel-nmap-kullanimi-lojistik-all-star_456253,0.cwx)
+
+
+
+
+
 ##### DAHA FAZLASI İÇİN:
+
+* [Nmap Wikipedia](http://tr.wikipedia.org/wiki/Nmap)
 
 * [Nmap Kullanım Kitapçığı](http://www.slideshare.net/bgasecurity/nmap-kullanm-kitap-27487242)
 
