@@ -212,6 +212,54 @@ Gördüğmüz gibi NSE scripti Ubuntu sistemimizde paylaşılmış dosyalar list
 
 #### Web Uygulamaları Taraması
 
+Kullanıcının kendi kurmuş olduğu uygulamaların güvenlik zafiyeti olabileceği gibi, bazen sistemin içerdiği payroll app, webmail gibi uygulamaların da güvenlik açığı olabilmektedir. Güvenlik açığı olduğu bilinen uygulamalarda exploit yardımıyla uzaktaki sisteme erişelebilir. Aşağıda Ubuntu sistemimizle gelen Apache sunucusunun varsayılan sayfasındayız.
+
+Önce web'de nasıl tarama yapılır ona bakalım.
+
+##### Nikto
+
+_Nikto_ güvenlik zafiyetlerini tarama amaçlı  Kali Linux'un içermiş olduğu 'web için Nessus' olarak bilinir; tehlikede olan dosyalar, sürümü eski ve yalnış ayarlamalar için arama yapar. Ubuntu sistemimize karşı Nikto'nu çalıştırmak için `-h` ile hangi hostta olduğunu belirtmemiz gerekir.
+
+```ShellSession
+root@kali:/# nikto -h 192.168.20.11
+- Nikto v2.1.5 ---------------------------------------------------------------------------
++ Target IP:            192.168.20.11
++ Target Hostname:      192.168.20.11
++ Target Port:          80
++ Start Time:           2015-12-28 21:31:38 (GMT-5)
+---------------------------------------------------------------------------
++ Server: Apache/2.2.9 (Ubuntu) PHP/5.2.6-2ubuntu4.6 with Suhosin-Patch 
+--snip--
++ OSVDB-40478: /tikiwiki/tiki-graph_formula.php?w=1&h=1&s=1&min=1&max=2&f[]=x. tan.phpinfo()&t=png&title=http://cirt.net/rfiinc.txt?: TikiWiki contains a vulnerability which allows remote attackers to execute arbitrary PHP code.
++ 6474 items checked: 2 error(s) and 7 item(s) reported on remote host
++ End Time: 2015-12-28 21:32:41 (GMT-5) (63 seconds)
+```
+
+Sonuçlara bakıldığında, TikiWiki adında güvenlik zafiyeti olan bir uygulamanın kurulmuş olduğunu görüyoruz. http://192.168.20.11/tikiwiki adresine gitdiğimizde bunun CMS uygulaması olduğunu görüyoruz. Nikto bu uygulamanın uzaktan kod çalıştırabilme yöntemiyle saldırı yapıbilceğini söylüyor. Open Sourced Vulnerability Database (OSVDB)'ye baktığımızda 40478 girişi bu zafiyete karşı saldırılarımızda Metasploit framework'una ait exploit kullanabileceğimizi gösteriyor.
+
+##### XAMPP Saldırısı
+
+Windows XP sistemimizin we sunucusunda, http://192.168.20.10/ adresine baktığımızda varsayılan olarak XAMPP 1.7.2 sayfası çıkıyor karşımıza. XAMPP kendi içerisinde veritabanı yönetimi için phpMyAdmin uygulamasını içermekte. Normalde, phpMyAdmin network'umuzda erişilemez, veya en azından kimlik doğrulaması ister. Ama XAMPP'ın bu sürümünde http://192.168.20.10/phpmyadmin adresinde erişime açık bulunuyor. Bu durumda phpMyAdmin kullanarak MySQL sunucusunda hertürlü komutlar çalıştırabiliriz.
+
+##### Varsayılan Kimlikler
+
+phpMyAdmin'e ek olarak, Google aratırsak bize XAMPP 1.7.3 ve öncesi sürümler Web Distributed Authoring and Versioning (WebDAV) uygulamasıyla beraber gelmekte olduğunu söyleyecek; yani HTTP üzerinden web sunucusunda olan dosyaları yönetebilmek için kullanınan uygulama. XAMPP'ta bu uygulama varsayılan kullanıcı adı ve şifreyle _wampp:xampp_ ile gelmekte. Bu değerler değiştirilmediyse, WebDAV erişebilen her kimse, siteyi ele geçirebiliri, veya sunucaya zararlı bir script aktararak, sunucu üzerinden sisteme zarar verebilir. http://192.168.20.10/webdav adresine gittiğimizde WebDAV oluğunu görebiliyoruz.
+
+WebDAV sunucularıyla iletişime geçebilmek için Cadaver adlı aracı kullanabiliyoruz. Aşağıda WebDAV sunucusuna varsayılan kimlik bilgileriyle giriş yapmayı deniyoruz.
+
+Cadaver girişi başarıyla sonuçlandı. Demek, hedefimizdeki Windows XP sistemi WebDAV için varsayılan kimlik bilgilerini kullanıyor, ve exploit edebileceğimize dair mesajdır.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

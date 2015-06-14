@@ -13,6 +13,7 @@ Herhangi bir bilgisayar sistemini ele geçirmek isteyen bir saldırganın yapaca
 * Bölge Aktarımı
 * Email Adres Arama
 * Maltego
+* Nmap
 
 #### [Güvenlik açıkları bulma](guvenlik_aciklari_bulma.md)
 

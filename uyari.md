@@ -69,8 +69,11 @@ __KONULAR__
         - [x] Bölge Aktarımı
         - [x] Email Adres Arama
         - [x] Maltego
+        - [x] Nmap
     - [ ] __Güvenlik açıkları bulma__
         - [x] Nessus
+        - [x] Nmap Betik Motoru
+        - [ ] Web Uygulamaları Taraması 
     - [ ] Trafik yakalama
 
 - [ ] __Saldırılar__
