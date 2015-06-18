@@ -99,6 +99,95 @@ __Sonuç olarak;__
 
 Katmanlı güvenlik anlayışı gereğince yukarıda anlatılan yöntemlerin uygulanması güvenliğinizi bir adım daha arttıracaktır.
 
+#### Kullanılabilir Kablosuz Arabirimlerini Keşfetme
+
+Kablosuz kartımızı Kali sanal makinemize bağlatıktan sonra, `iwconfig` komutunu yazarak sanal makinemizde bulunan kablosuz arabirimlerine bakalım. Bu durumda kartımız _wlan0_ olarak bağlı:
+
+```ShellSession
+root@kali:~# iwconfig
+wlan0       IEEE 802.11bg  ESSID:off/any
+            Mode:Managed   Access Point: Not-Associated    Tx-Power=20 dBm
+            Retry  long limit:7   RTS thr:off   Fragment thr:off
+            Encryption key:off
+            Power Management:off
+lo          no wireless extensions. 
+eth0        no wireless extensions.
+```
+
+##### Erişim Noktalarını Tarama
+
+Şimdi yakınımızda bulunan erişim noktalarını tarayabiliriz. Bu görevi `iwlist wlan0 scan` komutu ile yapacağız:
+
+```ShellSession
+root@kali:~# iwlist wlan0 scan
+    Cell 02 - Address: 00:23:69:F5:B4:2Bu
+                Channel:6
+                Frequency:2.437 GHz (Channel 6)
+                Quality=47/70 Signal level=-63 dBm
+                Encryption key:off
+                ESSID:"linksys"
+                Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 6 Mb/s
+                          9 Mb/s; 14 Mb/s; 18 Mb/s
+                Bit Rates:24 Mb/s; 36 Mb/s; 48 Mb/s; 54 Mb/s
+                Mode:Master
+--snip--
+```
+
+Bu tarama sonucunda, saldırımız için lazım olan nerdeyse tüm sonuçları elde edebiliyoruz. Elimizdde MAC adresi var, yayın olduğu kanalı biliyoruz, şifreleme kullanmadığını görüyoruz ve bunun SSID'di var.
+
+#### Monitor mode
+
+Devam etmeden önce, kartımızı _monitor moduna_ geçirelim. Wireshark'ta olam _promiscuous mode_ gibi, monitor modu bize kablosuz kartımıza yönelik kablosuz trafiği görmemizi sağlar. Kartımızı monitor moda atmak için Aircrack-ng kablosuz değerlendirme paketinin parçası olan _Airmon-ng_ scriptini kullanacağız. İlk önce, `airmon-ng check` ile monitor modunda engel olacak herhangi bir sürecin olup olmadığını kontrol ediyoruz.
+
+```ShellSession
+root@kali:~# airmon-ng check
+Found 2 processes that could cause trouble.
+If airodump-ng, aireplay-ng or airtun-ng stops working 
+after a short period of time, you may want to kill (some of) them! 
+-e
+PID     Name
+2714    NetworkManager
+5664    wpa_supplicant
+```
+
+Gördüğümüz gibi, Airmon engel olabilecek iki tane süreci bulmuş oldu. Bunların tümünü yok etmek için `airmon-ng check kill` komutu kullanıyoruz:
+
+```ShellSession
+root@kali:~# airmon-ng check kill
+Found 2 processes that could cause trouble.
+If airodump-ng, aireplay-ng or airtun-ng stops working 
+after a short period of time, you may want to kill (some of) them! 
+-e
+PID     Name
+2714    NetworkManager
+5664    wpa_supplicant
+Killing all those processes...
+```
+
+Şimdi `airmon-ng start wlan0` komutunu çalıştırarak monitor moduna alalım. Bu bize ait olmayan paketleri yakalamamızı sağlar. Airmon-ng yeni _mon0_ kablosuz arabirimini oluşturuyor.
+
+```ShellSession
+root@kali:~# airmon-ng start wlan0
+Interface       Chipset             Driver
+wlan0           Realtek RTL8187L    rtl8187 - [phy0]
+                (monitor mode enabled on mon0)
+```
+
+#### Paketleri Yakalama
+
+Aircrack-ng takımında bulunan Airodump-ng aracı yardımıyla kablosuz ağdaki paketleri yakalayabilir ve kaydedebiliriz. Aşağıda Airodump-ng ile _mon0_ monitor modunda çalıştırıyoruz:
+
+```ShellSession
+root@kali:~# airodump-ng mon0 --channel 6 
+CH 6 ][ Elapsed: 28 s ][ 2015-05-19 20:08
+
+BSSID               PWR  Beacons  #Data, #/s  CH  MB   ENC   CIPHER AUTH ESSID 
+00:23:69:F5:B4:2B   -30  53       2       0    6  54 . OPNv             linksys
+
+BSSID               STATION               PWR   Rate    Lost    Frames   Probe
+00:23:69:F5:B4:2B   70:56:81:B2:F0:53     -21    0      -54      42       19
+```
+
 #### Kablosuz Ağlarda Keşif
 Kablosuz ağlarda keşif yakın çevrede bulunan erişim noktalarının tespitidir. İşi abartıp WLAN araçlarını arabalarına alarak ya da yaya olarak yol boyunca etrafta bulunan kablosuz ağları keşfetmeye yönelik çalışmalara Wardriving, erişim noktalarının özelliklerine göre(şifreleme desteği var mı? Hangi kanalda çalışıyor vs) bulundukları yerlere çeşitli işaretlerin çizilmesine ise WarChalking deniyor.
 War driving için çeşitli programlar kullanılabilir fakat bunlardan en önemlileri ve iş yapar durumda olanları Windows sistemler için Netstumbler , Linux sistemler için Kismet’dir. Kismet aynı zamanda Windows işletim sisteminde monitor mode destekleyen kablosuz ağ arabirimleri ile de çalışabilmektedir.
