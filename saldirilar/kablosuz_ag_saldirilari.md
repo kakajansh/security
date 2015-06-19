@@ -239,7 +239,85 @@ Attack will be restarted every 5000 captured ivs.
 Starting PTW attack with 239400 ivs.
 KEY FOUND! [ 2C:85:8B:B6:31 ]
 Decrypted correctly: 100%
-``` 
+```
+
+#### WPA/WPA2 Anahtarını Kırma
+
+WPA şifre kırma işlemine geçmeden önce biraz size el sıkışmasından (handshake) olayından bahsetmem gerekir. WPA korumalı ağlarda istemci ve AP (Access point=erişim noktası) her oturum için PTK (Pairwise Transient Key) adı verilen bir anahtar oluşturup aralarındaki tüm trafiği bu anahtar ile şifreler. PTK, SSID ANounce (AP’den gelen bir kerelik rastgele bir sayı), SNounce (istemciden gelen bir kerelik rastgele bir sayı), AP MAC adresi, istemci MAC adresi ve ağ parolası kullanılarak oluşturulur. WPA/WPA2 kullanılan bir ağın parolası bilinse bile bir istemcinin trafiğini deşifre etmek için oturumun başlangıcındaki el sıkışmaya ihtiyaç duyulmasının sebebi de budur.
+
+İşlemlere geçmeden önce kullanabileceğimiz bazı programlar şu şekildedir:
+* __airodump:__ 802.11 için Paket Yakalama
+* __aireplay:__ 802.11 için Paket Enjeksiyonu
+* __aircrack:__ static WEP ve WPA Anahtar Kırma
+
+İlk önce sistemimizin ağ kartını gördüğüne emin olalım. `iwconfig` komutu size kartınızın durumunu gösterecektir.
+
+![wpa1]
+
+Bizim ağ kartımız ekranda wlan2 olarak görülüyor. Buna dikkat edilmesi gerekir. 
+
+Devam etmek için, ağ kartının monitor modu desteklemesi lazım. Bunun için airmon kullanılabilir. Komut ise `# airmon-ng start wlan2` gibidir.
+
+![wpa2]
+
+Bu aşamada handshake yakalama adına ilk adımımızı atalım.
+
+```ShellSession
+# airodump-ng --encrypt wpa mon0
+```
+
+![wpa3]
+
+Şekilde görüldüğü gibi kendimize ait olan ykarakul essid'sine sahip olan ağın şifresini kırmaya çalışacağız. Handshake yakalamak için aşağıdaki komut kullanılabilir.
+
+```ShellSession
+# airodump-ng -w ykarakul --encrypt wpa -c 1 --bssid BA:B4:2E:EE:E0:8A mon0
+```
+
+![wpa4]
+
+Ağa bağlı bir istemciyi yakalamak için bir süre beklemek gerekebilir.
+
+![wpa5]
+
+Hedef ağımıza bağlı bir bilgisayarın bilgisini aldıktan sonra aşağıdaki komutla handshake yakalanabilir.
+
+```ShellSession
+# aireplay-ng -0 0 -a (bssid) -c (station) mon0
+```
+
+> Not: -0 0 ifadeleri hedef ağdaki bağlı olan client' a ağdan düşmesi için sonsuz bir döngü sağlar.
+
+![wpa6]
+
+Yukarıdaki şekilde görüldüğü gibi hedefteki ağa bağlı olan bilgisayarı ağdan düşürüp tekrar bağlanması beklenmelidir. Bağlandıktan sonra handshake yakalama olayımız gerçekleşmiş olacaktır.
+
+![wpa7]
+
+Son adımda sözlük saldırısı ile parolanın belirlenmesi gerekmektedir. Bunun için aircrack aracı kullanılabilir.
+
+```ShellSession
+# aircrack-ng -w /root/Desktop/wifi passwd.txt ykarakul-01.cap
+```
+
+> Burada -w parametresi ile kullanılacak sözlük belirtilmektedir.
+
+Kullanılan sözlüğün büyüklüğüne göre belli bir süre beklemek gerekmektedir. Bu süre kullanılan sözlüğün kapsamına ve bilgisayarın donanımsal özelliklerine bağlıdır.
+
+![wpa8]
+
+[KAYNAK]
+
+[wpa1]: ../resim/ataklar/wpa/1.jpg
+[wpa2]: ../resim/ataklar/wpa/2.jpg
+[wpa3]: ../resim/ataklar/wpa/3.jpg
+[wpa4]: ../resim/ataklar/wpa/4.jpg
+[wpa5]: ../resim/ataklar/wpa/5.jpg
+[wpa6]: ../resim/ataklar/wpa/6.jpg
+[wpa7]: ../resim/ataklar/wpa/7.jpg
+[wpa8]: ../resim/ataklar/wpa/8.jpg
+[KAYNAK]: http://www.agguvenligi.net/2014/06/wifi-wpa-wpa2-parola-kirma.html
+
 
 #### Kablosuz Ağlarda Keşif
 Kablosuz ağlarda keşif yakın çevrede bulunan erişim noktalarının tespitidir. İşi abartıp WLAN araçlarını arabalarına alarak ya da yaya olarak yol boyunca etrafta bulunan kablosuz ağları keşfetmeye yönelik çalışmalara Wardriving, erişim noktalarının özelliklerine göre(şifreleme desteği var mı? Hangi kanalda çalışıyor vs) bulundukları yerlere çeşitli işaretlerin çizilmesine ise WarChalking deniyor.
