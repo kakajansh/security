@@ -236,3 +236,5 @@ http://www.slideshare.net/msdundar/w3afyi-taniyalim-4335734
 http://www.slideshare.net/bgasecurity/w3af-ile-web-uygulama-gvenlik-testleri-ii
 
 http://www.slideshare.net/bgasecurity/web-uygulama-pentest-egitimi?related=1
+
+http://www.slideshare.net/bgasecurity/bga-bank-web-gvenlik-testleri-uygulama-kitab

@@ -318,6 +318,12 @@ Kullanılan sözlüğün büyüklüğüne göre belli bir süre beklemek gerekme
 [wpa8]: ../resim/ataklar/wpa/8.jpg
 [KAYNAK]: http://www.agguvenligi.net/2014/06/wifi-wpa-wpa2-parola-kirma.html
 
+##### DAHA FAZLASI İÇİN
+
+* [Kablosuz Ağlar ve Güvenlik Riskleri](http://www.slideshare.net/bgasecurity/kablosuz-alar-ve-gvenlik-riskleri)
+
+* [Pentest Çalışmalarında Kablosuz Ağ Güvenlik Testleri](http://www.slideshare.net/bgasecurity/pentest-almalarnda-kablosuz-a-gvenlik-testleri)
+
 
 #### Kablosuz Ağlarda Keşif
 Kablosuz ağlarda keşif yakın çevrede bulunan erişim noktalarının tespitidir. İşi abartıp WLAN araçlarını arabalarına alarak ya da yaya olarak yol boyunca etrafta bulunan kablosuz ağları keşfetmeye yönelik çalışmalara Wardriving, erişim noktalarının özelliklerine göre(şifreleme desteği var mı? Hangi kanalda çalışıyor vs) bulundukları yerlere çeşitli işaretlerin çizilmesine ise WarChalking deniyor.

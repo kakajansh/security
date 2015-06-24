@@ -70,10 +70,10 @@ __KONULAR__
         - [x] Email Adres Arama
         - [x] Maltego
         - [x] Nmap
-    - [ ] __Güvenlik açıkları bulma__
+    - [x] Güvenlik açıkları bulma
         - [x] Nessus
         - [x] Nmap Betik Motoru
-        - [ ] Web Uygulamaları Taraması 
+        - [x] Web Uygulamaları Taraması 
     - [ ] Trafik yakalama
 
 - [ ] __Saldırılar__
@@ -94,10 +94,14 @@ __KONULAR__
         - [x] Yerel Dosya İçerme
         - [x] Uzaktaki Dosyayı İçerme
         - [ ] Cross-Site Scripting
-    - [ ] Kablosuz ağ saldırıları
+    - [x] Kablosuz ağ saldırıları
+        - [x] Kablosuz Ağ Arabirim Çalışma Modları
+        - [x] Yaygın Kablosuz Ağ Yöntemleri
+        - [x] WEP Anahtarı Kırma
+        - [x] WPA/WPA2 Anahtarın Kırma
 
-- [ ] __Mobil hackleme__
-    - [ ] Using the smartphone pentest framework
+- [ ] ~~Mobil hackleme~~
+    - [ ] ~~Using the smartphone pentest framework~~
 
 __EXTRA__
 
