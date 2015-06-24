@@ -77,7 +77,10 @@ __KONULAR__
     - [ ] Trafik yakalama
 
 - [ ] __Saldırılar__
-    - [ ] __Exploitation__
+    - [x] Exploitation
+        - [x] WebDAV Varsayılan Kimliğinden Sızma
+        - [x] Açık phpMyAdmin'e Sızma
+        - [x] Üçüncü Taraf Yazılımlarına Sızma
     - [ ] __Parola kırma saldırıları__
         - [x] Çevrimiçi Parola Atakları
             - [x] Hydra Kullanımı

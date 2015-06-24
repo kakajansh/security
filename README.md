@@ -27,17 +27,13 @@ Günümüz dünyasında her geçen gün bireyler, şirketler, kurumlar ve devlet
     * [Trafik yakalama](degerlendirme/README.md#trafik-yakalama)
 
 * [__Saldırılar__](saldirilar/README.md)
-    * Exploitation
+    * [Exploitation](saldirilar/exploitation.md)
     * [Parola kırma saldırıları](saldirilar/parola_kirma_saldirilari.md)
-    * Client-side exploitation
-    * Social engineering
-    * Antivirüs uygulamalarını atlatma
-    * Post exploitation
+    * [Client-side exploitation](saldirilar/client_side_exploitation.md)
+    * [Sosyal Mühendislik](saldirilar/sosyal_muhendislik.md)
+    * [Antivirüs uygulamalarını atlatma](saldirilar/antivirus_uygulamalarini_atlatma.md)
     * [Web uygulamaları](saldirilar/web_uygulamalari.md)
     * [Kablosuz ağ saldırıları](saldirilar/kablosuz_ag_saldirilari.md)
-
-* __Mobil hackleme__
-    * Using the smartphone pentest framework
 
 #### Extra
 
