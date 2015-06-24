@@ -25,7 +25,7 @@ __KONULAR__
 
 - [x] Giriş
 - [x] Genel bilgi
-- [x] __Temeller__
+- [x] Temeller
     - [x] Sanal Lab ayarları
         - [x] Kali Linux nedir
         - [x] VMware Kurulumu
@@ -50,7 +50,7 @@ __KONULAR__
         - [x] Bash programlama
         - [x] Python programlama
         - [x] C Programlarını Yazma ve Derleme
-    - [ ] __Metasploit Framework kullanımı__
+    - [x] Metasploit Framework kullanımı
         - [x] Msfconsole
         - [x] Metasploit Modüllerini bulma
         - [x] Payloads
@@ -58,7 +58,7 @@ __KONULAR__
         - [ ] Auxiliary
         - [ ] Msfgui
 
-- [ ] __Değerlendirmeler__
+- [x] Değerlendirmeler
     - [x] Bilgi toplama
         - [x] Netcraft
         - [x] Whois Arama
@@ -76,27 +76,24 @@ __KONULAR__
         - [x] Web Uygulamaları Taraması 
     - [ ] Trafik yakalama
 
-- [ ] __Saldırılar__
+- [x] Saldırılar
     - [x] Exploitation
         - [x] WebDAV Varsayılan Kimliğinden Sızma
         - [x] Açık phpMyAdmin'e Sızma
         - [x] Üçüncü Taraf Yazılımlarına Sızma
-    - [ ] __Parola kırma saldırıları__
+    - [x] Parola kırma saldırıları
         - [x] Çevrimiçi Parola Atakları
-            - [x] Hydra Kullanımı
-        - [ ] Çevrimdışı Saldırılar
+        - [x] Çevrimdışı Saldırılar
     - [ ] Client-side exploitation
-    - [ ] SociaL engineering
-    - [ ] Antiwirüs uygulamalarını atlatma
-    - [ ] Post exploitation
-    - [ ] __Web uygulamaları__
+    - [ ] Sosyal Mühendislik
+    - [ ] Antivirüs uygulamalarını atlatma
+    - [ ] Web uygulamaları
         - [x] Burp Proxy kullanımı
         - [x] SQL Injection
         - [x] SQLMap kullanımı 
         - [x] XPath Enjeksiyonu
         - [x] Yerel Dosya İçerme
         - [x] Uzaktaki Dosyayı İçerme
-        - [ ] Cross-Site Scripting
     - [x] Kablosuz ağ saldırıları
         - [x] Kablosuz Ağ Arabirim Çalışma Modları
         - [x] Yaygın Kablosuz Ağ Yöntemleri

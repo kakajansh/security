@@ -166,17 +166,13 @@ PASS password
 
 Unutmamız gereken şey, bazı sistemler, mesela _google mail_ belli bir hatalı giriş denemesinden sonra o hesabı askıya alır. Bazen deneme yaptığın IP adresi kara listeye atar. Bunu sisteme göre deneme aralıklarını ayarlanabilse de, genel sonuç olarak biraz uzun sürebilmektedir. Bunu aşmanın yolu ise bir sonraki bölümde öğreneceğimiz gerçek giriş denemesini yapmadan, şifreyi öğrenmeye çalışmaktır.
 
-##### Çevrimdışı Saldırılar
+#### Çevrimdışı Saldırılar
 
 Bu saldırıda kullanıcı adları ve parolaların sistemde kayıtlı tutulduğu noktalara erişim sağlanmaya çalışılır. Kullanıcı adları ve parolalar text olarak tutulmuş veya şifrelenmiş(encrypted) ve özetlenmiş(hashing) şekilde tutuluyor olabilir.
 
 Yetkilendirme yapılırken parolanın özet değeri alınarak kullanıcının girdiği ve sistemde daha önce kaydedilen parolanın özeti karşılaştırılır . Buna göre kullanıcıya yetki verilir. özet işlemi için MD5, SHA, NTLM gibi metotlar vardır.
 Bu saldırı türünde de brute-force, dictionary ve rainbow tabloları olmak üzere 3 farklı metot söylenebilir.
 
+##### DAHA FAZLASI İÇİN
 
-
-
-
-
-
-http://www.slideshare.net/bgasecurity/szma-testlerinde-parola-krma-saldrlar
+* [Sızma Testlerinde Parola Kırma Saldırıları](http://www.slideshare.net/bgasecurity/szma-testlerinde-parola-krma-saldrlar)
