@@ -1,7 +1,5 @@
 ### Antivirüs Uygulamalarını Atlatma
 
-#### Antivirus Bypass Teknikleri ve Tanınmaz Meterpreter Ajanı Oluşturma
-
 Pentest çalışmalarında, hedef sistemi ele geçirdikden sonra yetkisiz işlevleri yerine getirecek bir payload'a ihtiyaç duyulur. Bu bir casus yazılım olabilir (trojan), uzakdan yönetim aracı olabilir (rat) veya hedef sistemde kod/komut çalıştırmanıza olanak sağlayan bir araç  (shellcode exec) olabilir.
 
 __Antivirüsler Nasıl Çalışır?__
@@ -51,11 +49,11 @@ root@kali:#  msfcli exploit/multi/handler PAYLOAD=windows/meterpreter/reverse_tc
 
 Windows üzerinde undetectable.bat dosyamızı çalıştırıyoruz. Çalıştırmamızla birlikle meterpreter shell bizi karşılıyor.
 
-![ANTIVIRUS](../resim/ataklar/antivirus/4.png)
+![ANTIVIRUS](../resim/ataklar/antivirus/5.png)
 
 Zararlının çalıştırıldığı sistem üzerindeki antivirüsün zararlıyla ilgili herhangi bir bloklama işlemi gerçekleştirmediği aşağıda görülebilmektedir.
 
-![ANTIVIRUS](../resim/ataklar/antivirus/5.png)
+![ANTIVIRUS](../resim/ataklar/antivirus/4.png)
 
 Bu şekilde antivirüs atlatılarak mevcut sisteme en üst seviyede erişim sağlanmış olacaktır. 
 
