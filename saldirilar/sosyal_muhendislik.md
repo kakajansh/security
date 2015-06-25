@@ -308,3 +308,4 @@ Password: <input type="password" name="pwd"><br>
 * [Sosyal Mühendislik Saldırıları](https://www.bilgiguvenligi.gov.tr/index.php?option=com_content&task=view&id=183&Itemid=6)
 * [Sosyal Mühendislik Numaralarının Işe Yaramasının 5 Nedeni](http://www.trendmicro.com.tr/media/resource_lib/social/5-reasons-why-social-engineering-tricks-work-tr.pdf)
 * [SOSYAL MÜHENDİSLİK SALDIRILARI](http://www.emo.org.tr/ekler/288230da37dbf3c_ek.pdf)
+* [Facebook Şifre Kırma](https://www.youtube.com/watch?v=BNNR1ybL7YI)

